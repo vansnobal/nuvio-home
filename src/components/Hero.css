@@ -29,6 +29,30 @@
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+    width: 100%;
+    max-width: 600px;
+    /* 버튼이 너무 넓어지지 않도록 제한 */
+}
+
+.hero-buttons .btn {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    min-width: 200px;
+    /* 너무 작아지지 않도록 */
+}
+
+.btn.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+    background: var(--bg-surface-secondary);
+    /* 비활성화 배경색 */
+    color: var(--text-tertiary);
+    /* 비활성화 텍스트 색상 */
+    border-color: transparent;
 }
 
 .hero-image {
@@ -97,6 +121,16 @@
     font-size: 0.75rem;
     background: rgba(128, 128, 128, 0.2);
     color: var(--text-secondary);
+    padding: 0.2rem 0.5rem;
+    border-radius: 999px;
+    margin-left: 0.5rem;
+    white-space: nowrap;
+}
+
+.badge-apple {
+    font-size: 0.75rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
     padding: 0.2rem 0.5rem;
     border-radius: 999px;
     margin-left: 0.5rem;
