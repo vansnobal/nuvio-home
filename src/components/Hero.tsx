@@ -22,7 +22,7 @@ export function Hero() {
                                 <line x1="12" y1="15" x2="12" y2="3" />
                             </svg>
                             macOS 다운로드
-                            <span className="badge-apple">Apple Silicon</span>
+                            <span className="badge-apple">Silicon</span>
                         </a>
                         <a href="#download" className="btn btn-secondary disabled">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
