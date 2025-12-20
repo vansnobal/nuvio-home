@@ -1,0 +1,67 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    padding: 1rem 0;
+    background: var(--bg-background);
+    border-bottom: 1px solid var(--border-color);
+    backdrop-filter: blur(10px);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-image {
+    height: 64px;
+    width: auto;
+}
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.theme-toggle:hover {
+    background: var(--bg-surface-highlight);
+    border-color: var(--primary-500);
+}
+
+.cat-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    /* 클릭 방지 */
+}
+
+.cat-image {
+    height: 64px;
+    width: auto;
+    object-fit: contain;
+}
+
+.moon-icon {
+    stroke: #FDB813;
+    fill: #FDB813;
+}
