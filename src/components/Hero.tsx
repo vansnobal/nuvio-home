@@ -15,7 +15,7 @@ export function Hero() {
                     </p>
 
                     <div className="hero-buttons animate-fade-in animate-delay-2">
-                        <a href="#download" className="btn btn-primary">
+                        <a href="https://github.com/vansnobal/nuvio-home/releases/download/1.0.0/Nuvio.Note_1.0.0_aarch64.dmg" className="btn btn-primary">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                                 <polyline points="7 10 12 15 17 10" />
