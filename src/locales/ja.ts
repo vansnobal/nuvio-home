@@ -1,9 +1,9 @@
 export const ja = {
     translation: {
         hero: {
-            title_start: "あなたの思考、",
-            title_highlight: "美しく整理される",
-            description: "Nuvio Noteは、あなたの思考をローカルに安全に保存します。\nクラウドなしで、完全にあなただけの空間で作業しましょう。",
+            title_start: "あなたの記録、",
+            title_highlight: "深い洞察へと変わる",
+            description: "カレンダーの予定と散らばったメモをつなぎ合わせます。\nAIと共に、あなただけの新しい文脈を発見しましょう。",
             download_mac: "macOS ダウンロード",
             download_windows: "Windows ダウンロード",
             badge_silicon: "Silicon",

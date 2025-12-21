@@ -1,9 +1,9 @@
 export const en = {
     translation: {
         hero: {
-            title_start: "Your thoughts,",
-            title_highlight: "beautifully organized",
-            description: "Nuvio Note keeps your thoughts safe locally.\nWork in your own space, completely cloud-free.",
+            title_start: "Your Records,",
+            title_highlight: "Transformed into Deep Insights",
+            description: "Seamlessly connecting your calendar and scattered notes.\nDiscover new context and insights with AI.",
             download_mac: "Download macOS",
             download_windows: "Download Windows",
             badge_silicon: "Silicon",
