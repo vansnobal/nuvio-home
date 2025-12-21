@@ -37,11 +37,16 @@ export function Header() {
         <header className="header">
             <div className="container header-content">
                 <a href="/" className="logo">
+                    <img
+                        src={theme === 'dark' ? '/logo-dark.png' : '/logo-light.png'}
+                        alt="Nuvio Note"
+                        className="logo-image"
+                    />
                     <div className="cat-wrapper">
                         {theme === 'dark' ? (
-                            <img src="/cat-dark.png" alt="Nuvio Cat" className="logo-image cat-image" />
+                            <img src="/cat-dark.png" alt="Nuvio Cat" className="cat-image" />
                         ) : (
-                            <img src="/cat-light.png" alt="Nuvio Cat" className="logo-image cat-image" />
+                            <img src="/cat-light.png" alt="Nuvio Cat" className="cat-image" />
                         )}
                     </div>
                 </a>
