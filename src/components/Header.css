@@ -41,8 +41,7 @@
     transition: all 0.2s ease;
 }
 
-border-color: var(--primary-500);
-}
+
 
 .header-controls {
     display: flex;

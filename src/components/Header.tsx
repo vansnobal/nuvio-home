@@ -33,7 +33,7 @@ export function Header() {
                             i18n.changeLanguage(newLang);
                         }}
                     >
-                        {i18n.language.startsWith('ko') ? 'EN' : 'KO'}
+                        {i18n.language.startsWith('ko') ? 'Korean' : 'English'}
                     </button>
                     <button
                         className="theme-toggle"
