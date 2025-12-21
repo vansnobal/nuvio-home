@@ -30,8 +30,7 @@
     gap: 1rem;
     flex-wrap: wrap;
     width: 100%;
-    max-width: 600px;
-    /* 버튼이 너무 넓어지지 않도록 제한 */
+    /* max-width 제거하여 필요한 만큼 늘어나게 함 */
 }
 
 .hero-buttons .btn {
@@ -40,8 +39,10 @@
     justify-content: center;
     align-items: center;
     white-space: nowrap;
-    min-width: 200px;
-    /* 너무 작아지지 않도록 */
+    min-width: fit-content;
+    /* 컨텐츠 크기에 맞게 */
+    padding: 0.8rem 1.5rem;
+    /* 패딩 넉넉하게 */
 }
 
 .btn.disabled {

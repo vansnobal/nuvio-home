@@ -3,7 +3,7 @@ export const en = {
         hero: {
             title_start: "Your Records,",
             title_highlight: "Transformed into Deep Insights",
-            description: "Seamlessly connecting your calendar and scattered notes.\nDiscover new context and insights with AI.",
+            description: "Connecting scattered schedules and notes into a single context.\nDiscover new meaning hidden within your records.",
             download_mac: "Download macOS",
             download_windows: "Download Windows",
             badge_silicon: "Silicon",

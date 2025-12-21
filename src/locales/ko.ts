@@ -3,7 +3,7 @@ export const ko = {
         hero: {
             title_start: "당신의 기록,",
             title_highlight: "깊이 있는 통찰이 되다",
-            description: "캘린더의 일정과 흩어진 메모들을 연결해드립니다.\nAI와 함께 당신만의 새로운 맥락을 발견하세요.",
+            description: "흩어진 일정과 메모를 하나의 맥락으로 연결해 드립니다.\n당신의 기록 안에서 놓치고 있던 새로운 의미를 발견하세요.",
             download_mac: "macOS 다운로드",
             download_windows: "Windows 다운로드",
             badge_silicon: "Silicon",

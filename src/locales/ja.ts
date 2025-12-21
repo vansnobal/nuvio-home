@@ -3,7 +3,7 @@ export const ja = {
         hero: {
             title_start: "あなたの記録、",
             title_highlight: "深い洞察へと変わる",
-            description: "カレンダーの予定と散らばったメモをつなぎ合わせます。\nAIと共に、あなただけの新しい文脈を発見しましょう。",
+            description: "散らばった予定とメモを一つの文脈につなげます。\nあなたの記録の中から、見逃していた新しい意味を発見してください。",
             download_mac: "macOS ダウンロード",
             download_windows: "Windows ダウンロード",
             badge_silicon: "Silicon",
