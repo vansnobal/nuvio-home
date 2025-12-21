@@ -138,7 +138,7 @@
 }
 
 .cat-image {
-    height: 64px;
+    height: 32px;
     width: auto;
     object-fit: contain;
 }
