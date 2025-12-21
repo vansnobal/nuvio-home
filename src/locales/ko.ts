@@ -1,8 +1,8 @@
 export const ko = {
     translation: {
         hero: {
-            title_start: "당신의 생각,",
-            title_highlight: "아름답게 정리되다",
+            title_start: "당신의 생각을,",
+            title_highlight: "아름답게 정리해 드립니다.",
             description: "Nuvio Note는 당신의 생각을 안전하게 로컬에 저장합니다.\n클라우드 없이도, 온전히 당신만의 공간에서 작업하세요.",
             download_mac: "macOS 다운로드",
             download_windows: "Windows 다운로드",
