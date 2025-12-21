@@ -1,17 +1,24 @@
+import { useTranslation } from 'react-i18next';
 import './Hero.css';
 
 export function Hero() {
+    const { t } = useTranslation();
+
     return (
         <section className="hero">
             <div className="container hero-content">
                 <div className="hero-text animate-fade-in">
                     <h1>
-                        Your thoughts,<br />
-                        <span className="gradient-text">beautifully organized</span>
+                        {t('hero.title_start')}<br />
+                        <span className="gradient-text">{t('hero.title_highlight')}</span>
                     </h1>
                     <p className="hero-description animate-fade-in animate-delay-1">
-                        Nuvio Note는 당신의 생각을 안전하게 로컬에 저장합니다.<br />
-                        클라우드 없이도, 온전히 당신만의 공간에서 작업하세요.
+                        {t('hero.description').split('\n').map((line, i) => (
+                            <span key={i}>
+                                {line}
+                                {i === 0 && <br />}
+                            </span>
+                        ))}
                     </p>
 
                     <div className="hero-buttons animate-fade-in animate-delay-2">
@@ -21,8 +28,8 @@ export function Hero() {
                                 <polyline points="7 10 12 15 17 10" />
                                 <line x1="12" y1="15" x2="12" y2="3" />
                             </svg>
-                            macOS 다운로드
-                            <span className="badge-apple">Silicon</span>
+                            {t('hero.download_mac')}
+                            <span className="badge-apple">{t('hero.badge_silicon')}</span>
                         </a>
                         <a href="#download" className="btn btn-secondary disabled">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -30,8 +37,8 @@ export function Hero() {
                                 <polyline points="7 10 12 15 17 10" />
                                 <line x1="12" y1="15" x2="12" y2="3" />
                             </svg>
-                            Windows 다운로드
-                            <span className="badge-coming-soon">준비중</span>
+                            {t('hero.download_windows')}
+                            <span className="badge-coming-soon">{t('hero.badge_coming_soon')}</span>
                         </a>
                     </div>
                 </div>

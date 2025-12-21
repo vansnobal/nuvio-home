@@ -41,7 +41,32 @@
     transition: all 0.2s ease;
 }
 
-.theme-toggle:hover {
+border-color: var(--primary-500);
+}
+
+.header-controls {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.lang-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0 0.8rem;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    color: var(--text-primary);
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.lang-toggle:hover {
     background: var(--bg-surface-highlight);
     border-color: var(--primary-500);
 }

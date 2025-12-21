@@ -1,22 +1,25 @@
+import { useTranslation } from 'react-i18next';
 import './Philosophy.css';
 import { HardDrive, Lock, Keyboard } from 'lucide-react';
 
-const philosophies = [
-    {
-        icon: <HardDrive size={48} strokeWidth={1.5} />,
-        title: 'Local-first'
-    },
-    {
-        icon: <Lock size={48} strokeWidth={1.5} />,
-        title: 'Privacy by Design'
-    },
-    {
-        icon: <Keyboard size={48} strokeWidth={1.5} />,
-        title: 'Keyboard-first'
-    }
-];
-
 export function Philosophy() {
+    const { t } = useTranslation();
+
+    const philosophies = [
+        {
+            icon: <HardDrive size={48} strokeWidth={1.5} />,
+            title: t('philosophy.items.local_first')
+        },
+        {
+            icon: <Lock size={48} strokeWidth={1.5} />,
+            title: t('philosophy.items.privacy')
+        },
+        {
+            icon: <Keyboard size={48} strokeWidth={1.5} />,
+            title: t('philosophy.items.keyboard')
+        }
+    ];
+
     return (
         <section className="philosophy section">
             <div className="container">
@@ -25,7 +28,7 @@ export function Philosophy() {
                 <div className="philosophy-grid">
                     {philosophies.map((item, index) => (
                         <div
-                            key={item.title}
+                            key={index}
                             className="philosophy-card glass-card"
                             style={{ animationDelay: `${index * 0.1}s` }}
                         >
