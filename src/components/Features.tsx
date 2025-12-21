@@ -37,7 +37,6 @@ export function Features() {
             <div className="container">
                 <div className="section-header">
                     <h2>{t('features.title')}</h2>
-                    <p>{t('features.subtitle')}</p>
                 </div>
 
                 <div className="features-grid">

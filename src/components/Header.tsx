@@ -1,40 +1,77 @@
 import { useTheme } from '../contexts/ThemeContext';
 import { useTranslation } from 'react-i18next';
+import { Globe, Check } from 'lucide-react';
+import { useState, useEffect, useRef } from 'react';
 import './Header.css';
 
 export function Header() {
     const { theme, toggleTheme } = useTheme();
     const { i18n } = useTranslation();
+    const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
+    const langMenuRef = useRef<HTMLDivElement>(null);
+
+    const languages = [
+        { code: 'en', label: 'English' },
+        { code: 'ko', label: '한국어' },
+        { code: 'ja', label: '日本語' }
+    ];
+
+    useEffect(() => {
+        function handleClickOutside(event: MouseEvent) {
+            if (langMenuRef.current && !langMenuRef.current.contains(event.target as Node)) {
+                setIsLangMenuOpen(false);
+            }
+        }
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
+
+    const handleLanguageChange = (langCode: string) => {
+        i18n.changeLanguage(langCode);
+        setIsLangMenuOpen(false);
+    };
 
     return (
         <header className="header">
             <div className="container header-content">
                 <a href="/" className="logo">
-                    <img
-                        src={theme === 'dark' ? '/logo-dark.png' : '/logo-light.png'}
-                        alt="Nuvio Note"
-                        className="logo-image"
-                    />
+                    <div className="cat-wrapper">
+                        {theme === 'dark' ? (
+                            <img src="/cat-dark.png" alt="Nuvio Cat" className="logo-image cat-image" />
+                        ) : (
+                            <img src="/cat-light.png" alt="Nuvio Cat" className="logo-image cat-image" />
+                        )}
+                    </div>
                 </a>
 
-                <div className="cat-wrapper">
-                    <img
-                        src={theme === 'dark' ? '/cat-dark.png' : '/cat-light.png'}
-                        alt="Walking Cat"
-                        className="cat-image"
-                    />
-                </div>
-
                 <div className="header-controls">
-                    <button
-                        className="lang-toggle"
-                        onClick={() => {
-                            const newLang = i18n.language.startsWith('ko') ? 'en' : 'ko';
-                            i18n.changeLanguage(newLang);
-                        }}
-                    >
-                        {i18n.language.startsWith('ko') ? 'Korean' : 'English'}
-                    </button>
+                    <div className="lang-menu-container" ref={langMenuRef}>
+                        <button
+                            className={`lang-toggle ${isLangMenuOpen ? 'active' : ''}`}
+                            onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
+                            aria-label="Select language"
+                        >
+                            <Globe size={20} />
+                        </button>
+
+                        {isLangMenuOpen && (
+                            <div className="lang-dropdown animate-fade-in">
+                                {languages.map((lang) => (
+                                    <button
+                                        key={lang.code}
+                                        className={`lang-option ${i18n.language.startsWith(lang.code) ? 'selected' : ''}`}
+                                        onClick={() => handleLanguageChange(lang.code)}
+                                    >
+                                        <span>{lang.label}</span>
+                                        {i18n.language.startsWith(lang.code) && <Check size={16} className="check-icon" />}
+                                    </button>
+                                ))}
+                            </div>
+                        )}
+                    </div>
+
                     <button
                         className="theme-toggle"
                         onClick={toggleTheme}

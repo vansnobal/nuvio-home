@@ -3,6 +3,7 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import { ko } from './locales/ko';
 import { en } from './locales/en';
+import { ja } from './locales/ja';
 
 i18n
     .use(LanguageDetector)
@@ -10,7 +11,8 @@ i18n
     .init({
         resources: {
             ko: ko,
-            en: en
+            en: en,
+            ja: ja
         },
         fallbackLng: 'ko',
         interpolation: {
