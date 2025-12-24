@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
 
     // CJK (Korean, Japanese) characters often look distorted with artificial italics.
     // Only apply italic/serif to English.
-    const transformedClassName = `text-[#60A5FA] ${language === 'en' ? 'font-serif-elegant italic' : ''}`;
+    const transformedClassName = `text-[#60A5FA]`;
 
     return (
       <>
