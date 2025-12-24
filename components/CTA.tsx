@@ -39,7 +39,7 @@ const CTA: React.FC = () => {
             </p>
 
             <div className="pt-6">
-              <button className="bg-[#3C4A57] dark:bg-[#60A5FA] text-white dark:text-[#121212] px-8 py-3 rounded-full font-medium shadow-md hover:bg-[#2C3E50] dark:hover:bg-[#3B82F6] transition-all duration-300">
+              <button disabled className="bg-[#3C4A57] dark:bg-[#60A5FA] text-white dark:text-[#121212] px-8 py-3 rounded-full font-medium shadow-md transition-all duration-300 opacity-50 cursor-not-allowed">
                 {t('cta.button')}
               </button>
             </div>
