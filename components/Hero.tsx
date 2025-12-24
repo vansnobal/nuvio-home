@@ -12,8 +12,8 @@ const Hero: React.FC = () => {
     const parts = raw.split('{transformed}');
 
     // CJK (Korean, Japanese) characters often look distorted with artificial italics.
-    // Only apply italic to English.
-    const transformedClassName = `text-[#60A5FA] ${language === 'en' ? 'italic' : ''}`;
+    // Only apply italic/serif to English.
+    const transformedClassName = `text-[#60A5FA] ${language === 'en' ? 'font-serif-elegant italic' : ''}`;
 
     return (
       <>
@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
         <div className="space-y-8">
           <div className="space-y-4">
-            <h1 className={`text-5xl md:text-6xl ${language === 'ja' || language === 'ko' ? 'font-sans font-medium' : 'font-serif-elegant font-bold'} leading-tight text-[#2D3436] dark:text-[#F8F7F2]`}>
+            <h1 className={`text-5xl md:text-6xl ${language === 'ja' || language === 'ko' ? 'font-sans font-medium' : 'font-geometric font-bold'} leading-tight text-[#2D3436] dark:text-[#F8F7F2]`}>
               {renderTitle()}
             </h1>
             <p className="text-lg text-[#6B7280] dark:text-[#9CA3AF] max-w-lg leading-relaxed">

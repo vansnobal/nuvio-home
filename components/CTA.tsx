@@ -30,7 +30,7 @@ const CTA: React.FC = () => {
               <Sparkles size={32} />
             </div>
 
-            <h2 className={`text-3xl md:text-4xl ${language === 'ja' || language === 'ko' ? 'font-sans font-medium' : 'font-serif-elegant font-bold'} text-[#2D3436] dark:text-[#F8F7F2]`}>
+            <h2 className={`text-3xl md:text-4xl ${language === 'ja' || language === 'ko' ? 'font-sans font-medium' : 'font-geometric font-bold'} text-[#2D3436] dark:text-[#F8F7F2]`}>
               {renderTitle()}
             </h2>
 
