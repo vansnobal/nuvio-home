@@ -4,7 +4,7 @@ import { Sparkles } from 'lucide-react';
 import { useTranslation } from '../context/LanguageContext';
 
 const CTA: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
 
   const renderTitle = () => {
     const raw = t('cta.title');
@@ -30,7 +30,7 @@ const CTA: React.FC = () => {
               <Sparkles size={32} />
             </div>
 
-            <h2 className="text-3xl md:text-4xl font-serif-elegant font-bold text-[#2D3436] dark:text-[#F8F7F2]">
+            <h2 className={`text-3xl md:text-4xl font-serif-elegant ${language === 'ja' ? 'font-normal' : 'font-bold'} text-[#2D3436] dark:text-[#F8F7F2]`}>
               {renderTitle()}
             </h2>
 
