@@ -52,7 +52,7 @@ const Navbar: React.FC = () => {
             <img
               src={isDark ? "/logo-dark.png" : "/logo-light.png"}
               alt="Nuvio Note Logo"
-              className="h-[68px] w-[219px] object-contain object-left transition-all duration-300"
+              className="h-[65px] w-[208px] object-contain object-left transition-all duration-300"
             />
           </a>
         </div>
