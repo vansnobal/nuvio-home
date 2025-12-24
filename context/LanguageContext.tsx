@@ -17,6 +17,16 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
     const saved = localStorage.getItem('language') as Language;
     if (saved && (saved === 'en' || saved === 'ko' || saved === 'ja')) {
       setLanguageState(saved);
+    } else {
+      // Auto detect
+      const browserLang = navigator.language.toLowerCase();
+      if (browserLang.startsWith('ko')) {
+        setLanguageState('ko');
+      } else if (browserLang.startsWith('ja')) {
+        setLanguageState('ja');
+      } else {
+        setLanguageState('en');
+      }
     }
   }, []);
 
