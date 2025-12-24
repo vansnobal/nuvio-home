@@ -8,9 +8,9 @@ interface FontWrapperProps {
 const FontWrapper: React.FC<FontWrapperProps> = ({ children }) => {
     const { language } = useTranslation();
 
-    // If language is English, apply Playfair Display (font-serif-elegant).
+    // If language is English, apply Outfit (font-geometric).
     // Otherwise, use default (which is Inter/sans-serif).
-    const fontClass = language === 'en' ? 'font-serif-elegant' : '';
+    const fontClass = language === 'en' ? 'font-geometric' : '';
 
     return (
         <div className={`min-h-screen flex flex-col paper-texture ${fontClass}`}>
