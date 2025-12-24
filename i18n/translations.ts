@@ -27,7 +27,7 @@ export const translations = {
         { title: "Calendar Sync", desc: "Seamless integration with Google Calendar and Outlook for a unified timeline of your life." },
         { title: "Timeline View", desc: "Visualize your goals and schedules in a sleek Gantt chart style that makes planning effortless." },
         { title: "Fast Search", desc: "Ultra-fast full-text search. Find any note, task, or event in milliseconds with powerful filters." },
-        { title: "AI Insights", desc: "Discover hidden connections between your notes and tasks with intelligent pattern recognition." }
+
       ]
     },
     cta: {
@@ -70,7 +70,7 @@ export const translations = {
         { title: "캘린더 동기화", desc: "구글 캘린더 및 아웃룩과 원활하게 통합되어 삶의 모든 일정을 하나로 관리합니다." },
         { title: "타임라인 뷰", desc: "세련된 간트 차트 스타일로 목표와 일정을 시각화하여 계획 수립을 수월하게 만듭니다." },
         { title: "빠른 검색", desc: "초고속 전체 텍스트 검색. 강력한 필터로 어떤 노트나 작업도 순식간에 찾아냅니다." },
-        { title: "AI 인사이트", desc: "지능적인 패턴 인식을 통해 노트와 작업 사이의 숨겨진 연결고리를 발견하세요." }
+
       ]
     },
     cta: {
@@ -113,7 +113,7 @@ export const translations = {
         { title: "カレンダー同期", desc: "GoogleカレンダーやOutlookとシームレスに統合し、人生のタイムラインを一元化します。" },
         { title: "タイムラインビュー", desc: "洗練されたガントチャートスタイルで目標とスケジュールを視覚化し、計画を容易にします。" },
         { title: "高速検索", desc: "超高速な全文検索。強力なフィルターで、どんなノートやタスクも瞬時に見つけ出します。" },
-        { title: "AIインサイト", desc: "インテリジェントなパターン認識により、ノートとタスクの間の隠れた繋がりを発見します。" }
+
       ]
     },
     cta: {

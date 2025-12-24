@@ -9,7 +9,7 @@ const iconMap = [
   <Calendar className="text-rose-500" />,
   <GanttChart className="text-indigo-500" />,
   <Search className="text-emerald-500" />,
-  <Sparkles className="text-purple-500" />
+
 ];
 
 const Features: React.FC = () => {
