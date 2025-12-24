@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section className="relative pt-20 pb-24 overflow-hidden bg-transparent transition-colors duration-300">
+    <section id="download" className="relative pt-20 pb-24 overflow-hidden bg-transparent transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
         <div className="space-y-8">
           <div className="space-y-4">
