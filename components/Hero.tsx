@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
         <div className="space-y-8">
           <div className="space-y-4">
-            <h1 className={`text-5xl md:text-6xl font-serif-elegant ${language === 'ja' ? 'font-normal' : 'font-bold'} leading-tight text-[#2D3436] dark:text-[#F8F7F2]`}>
+            <h1 className={`text-5xl md:text-6xl ${language === 'ja' ? 'font-sans font-medium' : 'font-serif-elegant font-bold'} leading-tight text-[#2D3436] dark:text-[#F8F7F2]`}>
               {renderTitle()}
             </h1>
             <p className="text-lg text-[#6B7280] dark:text-[#9CA3AF] max-w-lg leading-relaxed">
