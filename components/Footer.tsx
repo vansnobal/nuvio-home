@@ -30,11 +30,7 @@ const Footer: React.FC = () => {
           />
         </div>
 
-        <div className="flex space-x-8 text-sm text-[#9CA3AF] dark:text-[#4B5563]">
-          <a href="#" className="hover:text-[#60A5FA] dark:hover:text-[#60A5FA] transition-colors">{t('footer.privacy')}</a>
-          <a href="#" className="hover:text-[#60A5FA] dark:hover:text-[#60A5FA] transition-colors">{t('footer.terms')}</a>
-          <a href="#" className="hover:text-[#60A5FA] dark:hover:text-[#60A5FA] transition-colors">{t('footer.contact')}</a>
-        </div>
+
 
         <p className="text-[#D1D5DB] dark:text-[#2D2D2D] text-xs">
           © {new Date().getFullYear()} Nuvio Note. {t('footer.rights')}
