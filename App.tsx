@@ -7,10 +7,12 @@ import CTA from './components/CTA';
 import Footer from './components/Footer';
 import { LanguageProvider } from './context/LanguageContext';
 
+import FontWrapper from './components/FontWrapper';
+
 const App: React.FC = () => {
   return (
     <LanguageProvider>
-      <div className="min-h-screen flex flex-col paper-texture">
+      <FontWrapper>
         <Navbar />
         <main className="flex-grow">
           <Hero />
@@ -18,7 +20,7 @@ const App: React.FC = () => {
           <CTA />
         </main>
         <Footer />
-      </div>
+      </FontWrapper>
     </LanguageProvider>
   );
 };
