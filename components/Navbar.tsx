@@ -52,7 +52,7 @@ const Navbar: React.FC = () => {
             <img
               src={isDark ? "/logo-dark.png" : "/logo-light.png"}
               alt="Nuvio Note Logo"
-              className="h-8 w-auto object-contain transition-all duration-300"
+              className="h-20 w-auto object-contain transition-all duration-300"
             />
           </a>
         </div>
@@ -83,8 +83,8 @@ const Navbar: React.FC = () => {
                       setShowLangMenu(false);
                     }}
                     className={`w-full text-left px-4 py-2 text-sm transition-colors ${language === lang.code
-                        ? 'bg-blue-50 dark:bg-blue-900/20 text-[#60A5FA] font-bold'
-                        : 'text-[#6B7280] dark:text-[#9CA3AF] hover:bg-[#F8F7F2] dark:hover:bg-[#2D2D2D]'
+                      ? 'bg-blue-50 dark:bg-blue-900/20 text-[#60A5FA] font-bold'
+                      : 'text-[#6B7280] dark:text-[#9CA3AF] hover:bg-[#F8F7F2] dark:hover:bg-[#2D2D2D]'
                       }`}
                   >
                     {lang.label}
