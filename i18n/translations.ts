@@ -74,7 +74,7 @@ export const translations = {
       ]
     },
     cta: {
-      title: "{powerful}와 함께 곧 찾아옵니다",
+      title: "{powerful}과 함께 곧 찾아옵니다",
       powerful: "더 강력한 기능들",
       subtitle: "더 나은 경험을 위해 프리미엄 기능 업데이트를 준비하고 있습니다. 조금만 더 기다려 주세요.",
       button: "출시 알림 받기"
