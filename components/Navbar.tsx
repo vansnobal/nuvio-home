@@ -50,13 +50,23 @@ const Navbar: React.FC = () => {
     <nav className="sticky top-0 z-50 bg-[#F8F7F2]/80 dark:bg-[#121212]/80 backdrop-blur-md border-b border-[#E2E0D8] dark:border-[#2D2D2D] transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <div className="flex items-center">
-          <a href="/" className="flex items-center hover:opacity-80 transition-opacity">
-            <img
-              src={isDark ? "/logo-dark.png" : "/logo-light.png"}
-              alt="Nuvio Note Logo"
-              className="h-[40px] md:h-[62px] w-auto object-contain object-left transition-all duration-300"
-            />
-          </a>
+          <div className="flex items-center gap-2">
+            {/* Mobile Menu Button */}
+            <button
+              className="md:hidden p-2 rounded-full hover:bg-[#E2E0D8] dark:hover:bg-[#2D2D2D] transition-colors text-[#3C4A57] dark:text-[#E2E8F0]"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
+            </button>
+
+            <a href="/" className="flex items-center hover:opacity-80 transition-opacity">
+              <img
+                src={isDark ? "/logo-dark.png" : "/logo-light.png"}
+                alt="Nuvio Note Logo"
+                className="h-[40px] md:h-[62px] w-auto object-contain object-left transition-all duration-300"
+              />
+            </a>
+          </div>
         </div>
 
         <div className="hidden md:flex items-center space-x-8 text-sm font-medium text-[#6B7280] dark:text-[#9CA3AF]">
@@ -104,13 +114,7 @@ const Navbar: React.FC = () => {
             {isDark ? <Sun size={18} /> : <Moon size={18} />}
           </button>
 
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden p-2 rounded-full hover:bg-[#E2E0D8] dark:hover:bg-[#2D2D2D] transition-colors text-[#3C4A57] dark:text-[#E2E8F0]"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
-          </button>
+
         </div>
       </div>
 
