@@ -35,18 +35,18 @@ const Hero: React.FC = () => {
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4">
-            <button className="flex items-center justify-center gap-3 bg-[#3C4A57] dark:bg-[#60A5FA] text-white dark:text-[#121212] px-8 py-4 rounded-xl shadow-lg hover:bg-[#2C3E50] dark:hover:bg-[#3B82F6] transition-all transform hover:-translate-y-1">
-              <Apple size={20} />
+          <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+            <button className="flex items-center justify-center gap-3 bg-[#3C4A57] dark:bg-[#60A5FA] text-white dark:text-[#121212] px-6 sm:px-8 py-4 rounded-xl shadow-lg hover:bg-[#2C3E50] dark:hover:bg-[#3B82F6] transition-all transform hover:-translate-y-1 w-full sm:w-auto">
+              <Apple size={20} className="shrink-0" />
               <div className="text-left">
                 <div className="text-xs opacity-80 leading-none mb-1">{t('hero.downloadMac')}</div>
-                <div className="text-sm font-bold flex items-center gap-2">
-                  Silicon <span className="text-[10px] bg-white/20 dark:bg-black/20 px-1.5 py-0.5 rounded uppercase">v1.0.0</span>
+                <div className="text-sm font-bold flex items-center gap-2 flex-wrap">
+                  Silicon <span className="text-[10px] bg-white/20 dark:bg-black/20 px-1.5 py-0.5 rounded uppercase whitespace-nowrap">v1.0.0</span>
                 </div>
               </div>
             </button>
-            <button className="flex items-center justify-center gap-3 bg-white dark:bg-[#1E1E1E] text-[#3C4A57] dark:text-[#E2E8F0] border border-[#E2E0D8] dark:border-[#2D2D2D] px-8 py-4 rounded-xl shadow-sm hover:bg-[#F1EFE7] dark:hover:bg-[#252525] transition-all disabled:opacity-50" disabled>
-              <Layout size={20} />
+            <button className="flex items-center justify-center gap-3 bg-white dark:bg-[#1E1E1E] text-[#3C4A57] dark:text-[#E2E8F0] border border-[#E2E0D8] dark:border-[#2D2D2D] px-6 sm:px-8 py-4 rounded-xl shadow-sm hover:bg-[#F1EFE7] dark:hover:bg-[#252525] transition-all disabled:opacity-50 w-full sm:w-auto" disabled>
+              <Layout size={20} className="shrink-0" />
               <div className="text-left">
                 <div className="text-xs opacity-60 leading-none mb-1">{t('hero.downloadWin')}</div>
                 <div className="text-sm font-bold">{t('hero.comingSoon')}</div>
