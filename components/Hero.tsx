@@ -44,6 +44,7 @@ const Hero: React.FC = () => {
                   Silicon <span className="text-[10px] bg-white/20 dark:bg-black/20 px-1.5 py-0.5 rounded uppercase whitespace-nowrap">v1.0.0</span>
                 </div>
               </div>
+              <div className="w-5 shrink-0" aria-hidden="true"></div>
             </button>
             <button className="flex items-center justify-center gap-3 bg-white dark:bg-[#1E1E1E] text-[#3C4A57] dark:text-[#E2E8F0] border border-[#E2E0D8] dark:border-[#2D2D2D] px-6 sm:px-8 py-4 rounded-xl shadow-sm hover:bg-[#F1EFE7] dark:hover:bg-[#252525] transition-all disabled:opacity-50 w-full sm:w-auto" disabled>
               <Layout size={20} className="shrink-0" />
@@ -51,6 +52,7 @@ const Hero: React.FC = () => {
                 <div className="text-xs opacity-60 leading-none mb-1">{t('hero.downloadWin')}</div>
                 <div className="text-sm font-bold">{t('hero.comingSoon')}</div>
               </div>
+              <div className="w-5 shrink-0" aria-hidden="true"></div>
             </button>
           </div>
         </div>

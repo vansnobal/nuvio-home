@@ -9,14 +9,18 @@ import { LanguageProvider } from './context/LanguageContext';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
+import Guide from './pages/Guide';
 
 import FontWrapper from './components/FontWrapper';
+
+import ScrollToTop from './components/ScrollToTop';
 
 const App: React.FC = () => {
   return (
     <LanguageProvider>
       <FontWrapper>
         <Router>
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={
               <>
@@ -31,6 +35,7 @@ const App: React.FC = () => {
             } />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/terms" element={<Terms />} />
+            <Route path="/guide" element={<Guide />} />
           </Routes>
         </Router>
       </FontWrapper>

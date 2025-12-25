@@ -62,7 +62,7 @@ const Privacy: React.FC = () => {
                                         {section.items && (
                                             <ul className="list-disc pl-5 space-y-2">
                                                 {section.items.map((item: string, itemIndex: number) => (
-                                                    <li key={itemIndex} dangerouslySetInnerHTML={{ __html: item.replace('>', '&gt;') }} />
+                                                    <li key={itemIndex} dangerouslySetInnerHTML={{ __html: item.replace(/>/g, '&gt;') }} />
                                                 ))}
                                             </ul>
                                         )}

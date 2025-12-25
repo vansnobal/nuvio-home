@@ -1,7 +1,7 @@
 
 export const translations = {
   en: {
-    nav: { features: "Features", download: "Download" },
+    nav: { features: "Features", download: "Download", guide: "User Guide" },
     hero: {
       title: "Your Records, {transformed} into Deep Insights",
       transformed: "Transformed",
@@ -166,7 +166,7 @@ export const translations = {
     }
   },
   ko: {
-    nav: { features: "주요기능", download: "다운로드" },
+    nav: { features: "주요기능", download: "다운로드", guide: "사용자 가이드" },
     hero: {
       title: "당신의 기록, {transformed}이 되다",
       transformed: "깊은 통찰",
@@ -331,7 +331,7 @@ export const translations = {
     }
   },
   ja: {
-    nav: { features: "主な機能", download: "ダウンロード" },
+    nav: { features: "主な機能", download: "ダウンロード", guide: "ユーザーガイド" },
     hero: {
       title: "あなたの記録、{transformed}へ",
       transformed: "深い洞察",
