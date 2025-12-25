@@ -1,10 +1,12 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Sparkles } from 'lucide-react';
 import { useTranslation } from '../context/LanguageContext';
+import SubscribeModal from './SubscribeModal';
 
 const CTA: React.FC = () => {
   const { t, language } = useTranslation();
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const renderTitle = () => {
     const raw = t('cta.title');
@@ -39,13 +41,22 @@ const CTA: React.FC = () => {
             </p>
 
             <div className="pt-6">
-              <button disabled className="bg-[#3C4A57] dark:bg-[#60A5FA] text-white dark:text-[#121212] px-8 py-3 rounded-full font-medium shadow-md transition-all duration-300 opacity-50 cursor-not-allowed">
+              <button
+                onClick={() => setIsModalOpen(true)}
+                className="bg-[#3C4A57] dark:bg-[#60A5FA] text-white dark:text-[#121212] px-8 py-3 rounded-full font-medium shadow-md transition-all duration-300 hover:scale-105 active:scale-95"
+              >
                 {t('cta.button')}
               </button>
             </div>
           </div>
         </div>
       </div>
+
+      <SubscribeModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        lang={language}
+      />
     </section>
   );
 };

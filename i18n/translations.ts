@@ -16,7 +16,18 @@ export const translations = {
         noEvents: "NO EVENTS",
         todayMeeting: "Today's Meeting",
         emptyNotes: "Empty Notes"
-      }
+      },
+    },
+    modal: {
+      title: "Get Notified on Launch",
+      description: "Be the first to know when Nuvio Note is released.",
+      placeholder: "Enter your email address",
+      submit: "Notify Me",
+      successTitle: "You're on the list!",
+      successDesc: "Thank you for subscribing. We will keep you updated.",
+      close: "Close",
+      error: "Failed to subscribe. Please try again.",
+      privacy: "We respect your inbox. No spam, ever."
     },
     features: {
       title: "Key Features",
@@ -103,6 +114,110 @@ export const translations = {
       ],
       date: "Announcement Date: December 25, 2025\nEffective Date: December 25, 2025"
     },
+    guide: {
+      title: "Nuvio Note User Guide",
+      intro: "Nuvio Note is an application that allows you to record work-related notes and systematically manage meeting discussions like To-Do items.\nIt also provides powerful search capabilities so you can quickly check your notes at any time.",
+      sections: [
+        {
+          title: "1. Getting Started",
+          subsections: [
+            {
+              title: "Installation & Execution",
+              content: "Run the downloaded installation file (Nuvio Note.exe or Nuvio Note.dmg) to complete the installation and launch the application."
+            },
+            {
+              title: "Account Connection (Optional)",
+              content: "Nuvio Note allows you to use all note features without logging in by default.",
+              alert: {
+                title: "When is Google Login required?",
+                content: "If you only use simple note-taking and management features, login is not required.\nLogin is only required when you want to use the Schedule Management (Google Calendar integration) feature to check calendar schedules in the app."
+              },
+              items: [
+                "Click the Profile icon in the top right corner.",
+                "Click the \"Sign in with Google\" button.",
+                "When the browser opens, log in with your Google account and grant permissions.",
+                "Once logged in, your profile image will appear, and calendar integration will begin."
+              ]
+            },
+            {
+              title: "Interface Overview",
+              content: "Nuvio Note consists of a Left Navigation and a Right Workspace for efficient work.",
+              items: [
+                "Header: Contains Search (Cmd+K / Ctrl+K) and Profile/Settings.",
+                "Left Panel (Navigation): Provides 4 tabs (ISSUES, TASKS, CALENDAR, TIMELINE) which can be reordered.",
+                "Right Panel (Workspace): Space for writing notes and checking details. Supports Tab-based multi-tasking."
+              ]
+            }
+          ]
+        },
+        {
+          title: "2. Features",
+          intro: "The right panel provides 4 views: Calendar Detail, Note, Todo, and Timeline.",
+          subsections: [
+            {
+              title: "Search",
+              icon: "search",
+              items: [
+                "Integrated Search: Press Cmd+K (macOS) / Ctrl+K (Windows) to search all notes and schedules.",
+                "Category Search: Type @ in the search bar to select a category."
+              ]
+            },
+            {
+              title: "Calendar Detail",
+              icon: "calendar",
+              content: "Manage schedules linked with Google Calendar and organize Post-meeting Work.",
+              items: [
+                "Meeting Status: WAIT (Pending), PROG (In Progress), DONE (Completed).",
+                "Meeting Notes: Click the Note button on an event card to create linked notes.",
+                "Sync: Google Calendar changes are not auto-synced. Click the Sync icon to update."
+              ]
+            },
+            {
+              title: "Note",
+              icon: "note",
+              content: "Powerful Markdown editor.",
+              items: [
+                "Creation: Created as daily work notes selected in the left calendar.",
+                "Pin: Pin a note to show it across different dates.",
+                "Lock: Prevent accidental edits.",
+                "Editor: Supports EDIT / SPLIT / PREVIEW modes and CHEATSHEET."
+              ]
+            },
+            {
+              title: "Todo",
+              icon: "todo",
+              items: [
+                "Integrated Management: Linked with ISSUES and TASKS tabs.",
+                "Daily Management: Add and manage tasks for specific dates.",
+                "Grouping: Automatically grouped by status."
+              ]
+            },
+            {
+              title: "Timeline",
+              icon: "timeline",
+              content: "Visualizes project progress in a Gantt Chart style.",
+              items: [
+                "Auto-generation: Enter data in the specific format in the note panel to generate the chart."
+              ],
+              codeExample: {
+                format: "Project Name, Start Date, End Date\nTask Name, Start Date, End Date, Owner1, Owner2...",
+                example: "Website Renewal, 2024-01-01, 2024-03-31\nDesign Draft, 2024-01-01, 2024-01-15, John, Jane\nFrontend Dev, 2024-01-16, 2024-02-28, Mike"
+              }
+            }
+          ]
+        },
+        {
+          title: "3. Settings",
+          content: "Click the Settings (Gear) icon in the bottom left.",
+          items: [
+            "Theme: Light, Dark, or System.",
+            "Language: Korean, English, Japanese.",
+            "Editor: Adjust font and size.",
+            "Data: Backup or export notes."
+          ]
+        }
+      ]
+    },
     terms: {
       title: "Terms of Service",
       intro: "These terms aim to define rights, obligations, responsibilities, and other necessary matters between Nuvio Note (hereinafter referred to as \"the Company\") and members regarding the use of services provided by the Company.",
@@ -181,7 +296,18 @@ export const translations = {
         noEvents: "일정 없음",
         todayMeeting: "오늘의 회의",
         emptyNotes: "노트가 비어있습니다"
-      }
+      },
+    },
+    modal: {
+      title: "출시 알림 받기",
+      description: "Nuvio Note가 출시되면 가장 먼저 알려드립니다.",
+      placeholder: "이메일 주소를 입력하세요",
+      submit: "알림 받기",
+      successTitle: "구독 완료!",
+      successDesc: "감사합니다. 출시 소식을 빠르게 전해드리겠습니다.",
+      close: "닫기",
+      error: "구독에 실패했습니다. 다시 시도해주세요.",
+      privacy: "스팸 메일은 절대 보내지 않습니다."
     },
     features: {
       title: "주요 기능",
@@ -268,6 +394,110 @@ export const translations = {
       ],
       date: "공고일자: 2025년 12월 25일\n시행일자: 2025년 12월 25일"
     },
+    guide: {
+      title: "Nuvio Note 사용자 가이드",
+      intro: "Nuvio Note는 업무와 관련된 기록을 남기고, 미팅에서 논의되는 내용을 마치 할 일(TODO)처럼 체계적으로 관리할 수 있는 애플리케이션입니다.\n또한, 강력한 검색 기능을 제공하여 언제든지 빠르게 메모 내용을 확인할 수 있습니다.",
+      sections: [
+        {
+          title: "1. 시작하기 (Getting Started)",
+          subsections: [
+            {
+              title: "설치 및 실행",
+              content: "다운로드한 설치 파일(Nuvio Note.exe 또는 Nuvio Note.dmg)을 실행하여 설치를 완료하고 애플리케이션을 실행합니다."
+            },
+            {
+              title: "계정 연결 (선택 사항)",
+              content: "Nuvio Note는 기본적으로 로그인 없이 모든 노트 기능을 사용할 수 있습니다.",
+              alert: {
+                title: "구글 로그인은 언제 필요한가요?",
+                content: "단순한 노트 작성 및 관리 기능만 사용하신다면 로그인이 필요하지 않습니다.\n일정 관리(Google Calendar 연동) 기능을 사용하여 캘린더 일정을 앱에서 확인하고 싶을 때만 로그인이 필요합니다."
+              },
+              items: [
+                "우측 상단의 프로필 아이콘을 클릭합니다.",
+                "\"Google로 로그인\" 버튼을 클릭합니다.",
+                "브라우저가 열리면 구글 계정으로 로그인하고 권한을 허용합니다.",
+                "로그인이 완료되면 프로필 이미지가 표시되고 캘린더 연동이 시작됩니다."
+              ]
+            },
+            {
+              title: "인터페이스 둘러보기",
+              content: "Nuvio Note는 효율적인 작업을 위해 좌측 내비게이션과 우측 작업 공간으로 구성되어 있습니다.",
+              items: [
+                "헤더 (Header): 검색창 (키보드 단축키 지원) 및 프로필 설정을 포함합니다.",
+                "좌측 패널 (Navigation): 업무 흐름에 따라 ISSUES, TASKS, CALENDAR, TIMELINE 4가지 탭을 제공하며 순서를 변경할 수 있습니다.",
+                "우측 패널 (Workspace): 실제 노트 작성 및 상세 확인 공간으로, 탭(Tab) 방식으로 멀티태스킹을 지원합니다."
+              ]
+            }
+          ]
+        },
+        {
+          title: "2. 기능 상세 (Features)",
+          intro: "우측 패널은 작업의 성격에 따라 캘린더 상세, 노트, 할 일(TODO), 타임라인의 4가지 뷰를 제공합니다.",
+          subsections: [
+            {
+              title: "검색 (Search)",
+              icon: "search",
+              items: [
+                "통합 검색: 단축키 Cmd + K (macOS) / CTRL K (Windows)를 눌러 활성화하며, 모든 노트와 일정을 한 번에 검색할 수 있습니다.",
+                "카테고리 검색: 검색창에서 @를 입력하면 카테고리를 선택할 수 있습니다."
+              ]
+            },
+            {
+              title: "캘린더 상세 (Calendar Detail)",
+              icon: "calendar",
+              content: "구글 캘린더와 연동하여 일정을 관리하고, 미팅 후속 업무(Post-meeting Work)를 체계적으로 정리하기 위한 기능입니다.",
+              items: [
+                "미팅 상태 관리: WAIT (대기), PROG (진행 중), DONE (완료) 상태로 관리됩니다.",
+                "미팅 노트: 일정 카드의 Note 버튼을 클릭하여 회의록을 작성할 수 있습니다.",
+                "동기화: 구글 캘린더 변경 사항은 자동 동기화되지 않으므로, 필요시 동기화 아이콘을 클릭해야 합니다."
+              ]
+            },
+            {
+              title: "노트 (Note)",
+              icon: "note",
+              content: "강력한 마크다운 에디터를 제공합니다.",
+              items: [
+                "작성: 좌측 캘린더의 특정 일자에 대한 업무 노트로 생성됩니다.",
+                "고정 (Pin): Pin 버튼을 눌러 다른 날짜에서도 공통으로 노출시킬 수 있습니다.",
+                "잠금 (Lock): 편집을 제한하여 실수를 방지합니다.",
+                "에디터 기능: EDIT / SPLIT / PREVIEW 모드 및 CHEATSHEET를 지원합니다."
+              ]
+            },
+            {
+              title: "할 일 (Todo)",
+              icon: "todo",
+              items: [
+                "통합 관리: ISSUES 및 TASKS 탭과 연동됩니다.",
+                "날짜별 관리: 각 날짜에 해야 할 업무를 추가하고 관리합니다.",
+                "상태 그룹핑: 진행 상태에 따라 자동으로 그룹핑됩니다."
+              ]
+            },
+            {
+              title: "타임라인 (Timeline)",
+              icon: "timeline",
+              content: "간트 차트(Gantt Chart) 형태로 프로젝트 진행 상황을 시각화합니다.",
+              items: [
+                "자동 생성: 노트 패널에 특정 양식으로 입력하면 타임라인이 자동으로 그려집니다."
+              ],
+              codeExample: {
+                format: "프로젝트명, 시작일, 종료일\nTASK명, 시작일, 종료일, 담당자1, 담당자2...",
+                example: "웹사이트 리뉴얼, 2024-01-01, 2024-03-31\n디자인 시안, 2024-01-01, 2024-01-15, 김철수, 이영희\n프론트엔드 개발, 2024-01-16, 2024-02-28, 박지성"
+              }
+            }
+          ]
+        },
+        {
+          title: "3. 설정 (Settings)",
+          content: "좌측 하단의 설정(톱니바퀴) 아이콘을 눌러 환경을 설정할 수 있습니다.",
+          items: [
+            "테마: 라이트, 다크, 시스템 설정 지원.",
+            "언어: 한국어, 영어, 일본어 지원.",
+            "에디터: 폰트 종류 및 크기 조절.",
+            "데이터: 노트 백업 및 내보내기."
+          ]
+        }
+      ]
+    },
     terms: {
       title: "서비스 이용약관",
       intro: "본 약관은 Nuvio Note(이하 \"회사\")가 제공하는 서비스의 이용과 관련하여 회사와 회원 간의 권리, 의무 및 책임사항, 기타 필요한 사항을 규정함을 목적으로 합니다.",
@@ -346,7 +576,18 @@ export const translations = {
         noEvents: "予定なし",
         todayMeeting: "今日の会議",
         emptyNotes: "ノートが空です"
-      }
+      },
+    },
+    modal: {
+      title: "リリース通知を受け取る",
+      description: "Nuvio Noteがリリースされたら一番にお知らせします。",
+      placeholder: "メールアドレスを入力",
+      submit: "通知を受け取る",
+      successTitle: "登録完了！",
+      successDesc: "ありがとうございます。最新情報をお届けします。",
+      close: "閉じる",
+      error: "登録に失敗しました。もう一度お試しください。",
+      privacy: "スパムメールは送信しません。"
     },
     features: {
       title: "主な機能",
@@ -432,6 +673,110 @@ export const translations = {
         }
       ],
       date: "公告日：2025年12月25日\n施行日：2025年12月25日"
+    },
+    guide: {
+      title: "Nuvio Note ユーザーガイド",
+      intro: "Nuvio Noteは、業務に関する記録を残し、会議で議論された内容をToDoのように体系的に管理できるアプリケーションです。\nまた、強力な検索機能を提供し、いつでも素早くメモの内容を確認できます。",
+      sections: [
+        {
+          title: "1. はじめに (Getting Started)",
+          subsections: [
+            {
+              title: "インストールと実行",
+              content: "ダウンロードしたインストールファイル（Nuvio Note.exe または Nuvio Note.dmg）を実行してインストールを完了し、アプリケーションを起動します。"
+            },
+            {
+              title: "アカウント連携（オプション）",
+              content: "Nuvio Noteは、基本的にログインなしですべてのノート機能を使用できます。",
+              alert: {
+                title: "Googleログインはいつ必要ですか？",
+                content: "単純なノート作成および管理機能のみを使用する場合、ログインは不要です。\nスケジュール管理（Googleカレンダー連携）機能を使用してアプリでカレンダーの予定を確認したい場合にのみログインが必要です。"
+              },
+              items: [
+                "右上のプロフィールアイコンをクリックします。",
+                "「Googleでログイン」ボタンをクリックします。",
+                "ブラウザが開いたら、Googleアカウントでログインして権限を許可します。",
+                "ログインが完了するとプロフィール画像が表示され、カレンダー連携が開始されます。"
+              ]
+            },
+            {
+              title: "インターフェース概要",
+              content: "Nuvio Noteは、効率的な作業のために左側のナビゲーションと右側のワークスペースで構成されています。",
+              items: [
+                "ヘッダー (Header)：検索（Cmd+K / Ctrl+K）およびプロフィール/設定を含みます。",
+                "左パネル (Navigation)：業務フローに合わせてISSUES、TASKS、CALENDAR、TIMELINEの4つのタブを提供し、順序を変更できます。",
+                "右パネル (Workspace)：実際のノート作成および詳細確認を行うスペースで、タブ（Tab）方式でマルチタスクをサポートします。"
+              ]
+            }
+          ]
+        },
+        {
+          title: "2. 機能詳細 (Features)",
+          intro: "右パネルは、作業の性質に応じてカレンダー詳細、ノート、ToDo、タイムラインの4つのビューを提供します。",
+          subsections: [
+            {
+              title: "検索 (Search)",
+              icon: "search",
+              items: [
+                "統合検索：ショートカットキー Cmd+K (macOS) / Ctrl+K (Windows) で有効化し、すべてのノートと予定を一度に検索できます。",
+                "カテゴリ検索：検索バーで @ を入力するとカテゴリを選択できます。"
+              ]
+            },
+            {
+              title: "カレンダー詳細 (Calendar Detail)",
+              icon: "calendar",
+              content: "Googleカレンダーと連携して予定を管理し、会議後のフォローアップ業務（Post-meeting Work）を体系的に整理するための機能です。",
+              items: [
+                "会議状態管理：WAIT（待機）、PROG（進行中）、DONE（完了）状態で管理されます。",
+                "会議ノート：予定カードのNoteボタンをクリックして、議事録を作成できます。",
+                "同期：Googleカレンダーの変更内容は自動同期されないため、必要に応じて同期アイコンをクリックしてください。"
+              ]
+            },
+            {
+              title: "ノート (Note)",
+              icon: "note",
+              content: "強力なマークダウンエディタを提供します。",
+              items: [
+                "作成：左側のカレンダーで選択した日付の業務ノートとして生成されます。",
+                "固定 (Pin)：Pinボタンを押して、他の日付でも共通して表示させることができます。",
+                "ロック (Lock)：編集を制限して、誤操作を防止します。",
+                "エディタ機能：EDIT / SPLIT / PREVIEW モードおよびCHEATSHEETをサポートします。"
+              ]
+            },
+            {
+              title: "ToDo (Todo)",
+              icon: "todo",
+              items: [
+                "統合管理：ISSUESおよびTASKSタブと連動します。",
+                "日付別管理：各日付に行うべき業務を追加・管理します。",
+                "状態グルーピング：進行状態に応じて自動的にグループ化されます。"
+              ]
+            },
+            {
+              title: "タイムライン (Timeline)",
+              icon: "timeline",
+              content: "ガントチャート形式でプロジェクトの進行状況を可視化します。",
+              items: [
+                "自動生成：ノートパネルに特定の形式で入力すると、タイムラインが自動的に描画されます。"
+              ],
+              codeExample: {
+                format: "プロジェクト名, 開始日, 終了日\nタスク名, 開始日, 終了日, 担当者1, 担当者2...",
+                example: "ウェブサイトリニューアル, 2024-01-01, 2024-03-31\nデザイン案, 2024-01-01, 2024-01-15, 田中, 佐藤\nフロントエンド開発, 2024-01-16, 2024-02-28, 鈴木"
+              }
+            }
+          ]
+        },
+        {
+          title: "3. 設定 (Settings)",
+          content: "左下の設定（歯車）アイコンを押して環境を設定できます。",
+          items: [
+            "テーマ：ライト、ダーク、システム設定をサポート。",
+            "言語：韓国語、英語、日本語をサポート。",
+            "エディタ：フォントの種類とサイズを調整。",
+            "データ：ノートのバックアップおよびエクスポート。"
+          ]
+        }
+      ]
     },
     terms: {
       title: "利用規約",
