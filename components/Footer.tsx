@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { useTranslation } from '../context/LanguageContext';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
@@ -28,6 +29,15 @@ const Footer: React.FC = () => {
             alt="Nuvio Note Logo"
             className="h-[62px] w-[198px] object-contain object-center transition-all duration-300"
           />
+        </div>
+
+        <div className="flex space-x-6 text-[#4B5563] dark:text-[#9CA3AF] text-sm">
+          <Link to="/privacy" className="hover:text-[#2D2D2D] dark:hover:text-[#E2E0D8] transition-colors duration-200">
+            {t('footer.privacy')}
+          </Link>
+          <Link to="/terms" className="hover:text-[#2D2D2D] dark:hover:text-[#E2E0D8] transition-colors duration-200">
+            {t('footer.terms')}
+          </Link>
         </div>
 
 
