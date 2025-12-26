@@ -63,7 +63,7 @@ const SubscribeModal: React.FC<SubscribeModalProps> = ({ isOpen, onClose, lang }
                     <X size={20} />
                 </button>
 
-                <div className="text-center mb-6">
+                <div className="text-center mb-6 scale-[0.8] min-[350px]:scale-100 origin-center">
                     <div className="w-12 h-12 bg-blue-50 dark:bg-blue-900/20 rounded-full flex items-center justify-center mx-auto mb-4 text-[#60A5FA]">
                         <Mail size={24} />
                     </div>
