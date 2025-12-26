@@ -83,7 +83,7 @@ const Hero: React.FC = () => {
           </div>
         </div>
 
-        <div className="relative group scale-90 min-[350px]:scale-100 origin-top min-[350px]:origin-center transition-transform">
+        <div className="relative group scale-90 min-[350px]:scale-100 origin-top-left min-[350px]:origin-center transition-transform">
           <div className="absolute -inset-4 bg-blue-100/30 dark:bg-blue-900/10 rounded-[32px] blur-2xl group-hover:bg-blue-200/40 transition-all duration-700"></div>
 
           <div className="relative bg-white dark:bg-[#1E1E1E] p-2 rounded-[24px] shadow-2xl border border-[#E2E0D8] dark:border-[#2D2D2D] transform rotate-1 group-hover:rotate-0 transition-all duration-500">
