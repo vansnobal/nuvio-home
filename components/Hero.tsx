@@ -55,7 +55,7 @@ const Hero: React.FC = () => {
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-3 min-[350px]:gap-4 w-full sm:w-auto scale-90 min-[350px]:scale-100 origin-center min-[350px]:origin-left">
+          <div className="flex flex-col sm:flex-row gap-3 min-[350px]:gap-4 w-full sm:w-auto scale-90 min-[350px]:scale-100 origin-left">
             <button
               onClick={(e) => handleDownload(e, 'mac')}
               className="flex flex-col min-[350px]:flex-row items-center justify-center gap-1.5 min-[350px]:gap-2 sm:gap-3 bg-[#3C4A57] dark:bg-[#60A5FA] text-white dark:text-[#121212] px-2 sm:px-8 py-3 sm:py-4 rounded-xl shadow-lg hover:bg-[#2C3E50] dark:hover:bg-[#3B82F6] transition-all transform hover:-translate-y-1 w-full sm:w-auto"
