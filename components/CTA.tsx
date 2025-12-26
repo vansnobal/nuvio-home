@@ -43,7 +43,7 @@ const CTA: React.FC = () => {
             <div className="pt-3 min-[350px]:pt-6">
               <button
                 onClick={() => setIsModalOpen(true)}
-                className="bg-[#3C4A57] dark:bg-[#60A5FA] text-white dark:text-[#121212] px-8 py-3 rounded-full font-medium shadow-md transition-all duration-300 hover:scale-105 active:scale-95"
+                className="bg-[#3C4A57] dark:bg-[#60A5FA] text-white dark:text-[#121212] px-8 py-3 rounded-full font-medium shadow-md transition-all duration-300 hover:scale-105 active:scale-95 scale-[0.8] min-[350px]:scale-100 origin-top"
               >
                 {t('cta.button')}
               </button>
