@@ -20,27 +20,27 @@ const CTA: React.FC = () => {
   };
 
   return (
-    <section className="py-24 transition-colors duration-300">
+    <section className="py-12 min-[350px]:py-24 transition-colors duration-300">
       <div className="max-w-4xl mx-auto px-6">
-        <div className="relative overflow-hidden bg-white dark:bg-[#1E1E1E] border border-[#E2E0D8] dark:border-[#2D2D2D] rounded-[40px] p-12 text-center shadow-xl transition-all duration-300">
+        <div className="relative overflow-hidden bg-white dark:bg-[#1E1E1E] border border-[#E2E0D8] dark:border-[#2D2D2D] rounded-[40px] p-6 min-[350px]:p-12 text-center shadow-xl transition-all duration-300">
           <div className="absolute top-0 right-0 p-8 text-[#60A5FA]/10 dark:text-[#60A5FA]/5">
             <Sparkles size={120} />
           </div>
 
-          <div className="relative z-10 space-y-6">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-50 dark:bg-blue-900/20 text-[#60A5FA] rounded-full mb-4 transition-colors">
+          <div className="relative z-10 space-y-3 min-[350px]:space-y-6">
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-50 dark:bg-blue-900/20 text-[#60A5FA] rounded-full mb-2 min-[350px]:mb-4 transition-colors">
               <Sparkles size={32} />
             </div>
 
-            <h2 className={`text-3xl md:text-4xl ${language === 'ja' || language === 'ko' ? 'font-sans font-medium' : 'font-geometric font-bold'} text-[#2D3436] dark:text-[#F8F7F2]`}>
+            <h2 className={`text-lg min-[350px]:text-3xl md:text-4xl ${language === 'ja' || language === 'ko' ? 'font-sans font-medium' : 'font-geometric font-bold'} text-[#2D3436] dark:text-[#F8F7F2]`}>
               {renderTitle()}
             </h2>
 
-            <p className="text-[#6B7280] dark:text-[#9CA3AF] text-lg max-w-md mx-auto">
+            <p className="text-[#6B7280] dark:text-[#9CA3AF] text-base min-[350px]:text-lg max-w-md mx-auto">
               {t('cta.subtitle')}
             </p>
 
-            <div className="pt-6">
+            <div className="pt-3 min-[350px]:pt-6">
               <button
                 onClick={() => setIsModalOpen(true)}
                 className="bg-[#3C4A57] dark:bg-[#60A5FA] text-white dark:text-[#121212] px-8 py-3 rounded-full font-medium shadow-md transition-all duration-300 hover:scale-105 active:scale-95"
