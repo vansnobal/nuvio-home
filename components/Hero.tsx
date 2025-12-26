@@ -44,7 +44,7 @@ const Hero: React.FC = () => {
     <section className="relative pt-24 pb-12 md:pt-32 md:pb-24 overflow-hidden">
       {/* Background Elements */}
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-8 min-[350px]:gap-16 items-center">
+      <div className="max-w-7xl mx-auto px-2 min-[350px]:px-4 sm:px-6 grid lg:grid-cols-2 gap-8 min-[350px]:gap-16 items-center">
         <div className="space-y-6 min-[350px]:space-y-8">
           <div className="space-y-3 min-[350px]:space-y-4">
             <h1 className={`text-2xl min-[350px]:text-3xl sm:text-4xl md:text-6xl ${language === 'ja' || language === 'ko' ? 'font-sans font-medium' : 'font-geometric font-bold'} leading-tight text-[#2D3436] dark:text-[#F8F7F2] break-words`}>
