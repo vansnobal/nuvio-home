@@ -41,7 +41,7 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section className="relative pt-24 pb-12 md:pt-32 md:pb-24 overflow-hidden">
+    <section className="relative pt-12 min-[350px]:pt-24 pb-12 md:pt-32 md:pb-24 overflow-hidden">
       {/* Background Elements */}
 
       <div className="max-w-7xl mx-auto px-2 min-[350px]:px-4 sm:px-6 grid lg:grid-cols-2 gap-8 min-[350px]:gap-16 items-center">
