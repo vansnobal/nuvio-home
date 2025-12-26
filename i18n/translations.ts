@@ -17,6 +17,7 @@ export const translations = {
         todayMeeting: "Today's Meeting",
         emptyNotes: "Empty Notes"
       },
+      mobileAlert: "Nuvio Note is a desktop application.\nPlease visit from your Mac or PC to download."
     },
     modal: {
       title: "Get Notified on Launch",
@@ -297,6 +298,7 @@ export const translations = {
         todayMeeting: "오늘의 회의",
         emptyNotes: "노트가 비어있습니다"
       },
+      mobileAlert: "Nuvio Note는 데스크탑 전용 애플리케이션입니다.\nPC 또는 Mac에서 접속하여 다운로드해 주세요."
     },
     modal: {
       title: "출시 알림 받기",
@@ -577,6 +579,7 @@ export const translations = {
         todayMeeting: "今日の会議",
         emptyNotes: "ノートが空です"
       },
+      mobileAlert: "Nuvio Noteはデスクトップ専用アプリケーションです。\nPCまたはMacからアクセスしてダウンロードしてください。"
     },
     modal: {
       title: "リリース通知を受け取る",

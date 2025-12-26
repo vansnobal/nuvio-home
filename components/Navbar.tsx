@@ -48,7 +48,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="sticky top-0 z-50 bg-[#F8F7F2]/80 dark:bg-[#121212]/80 backdrop-blur-md border-b border-[#E2E0D8] dark:border-[#2D2D2D] transition-colors duration-300">
-      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         <div className="flex items-center">
           <div className="flex items-center gap-2">
             {/* Mobile Menu Button */}
@@ -121,7 +121,7 @@ const Navbar: React.FC = () => {
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
         <div className="md:hidden absolute top-16 left-0 w-full bg-[#F8F7F2] dark:bg-[#121212] border-b border-[#E2E0D8] dark:border-[#2D2D2D] shadow-lg animate-in slide-in-from-top-2 duration-200">
-          <div className="flex flex-col px-6 py-4 space-y-4">
+          <div className="flex flex-col px-4 sm:px-6 py-4 space-y-4">
             <a
               href="/#features"
               className="text-[#6B7280] dark:text-[#9CA3AF] hover:text-[#3C4A57] dark:hover:text-white font-medium py-2 transition-colors"
