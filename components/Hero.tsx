@@ -61,7 +61,7 @@ const Hero: React.FC = () => {
               className="flex flex-row items-center justify-center gap-1.5 min-[350px]:gap-2 sm:gap-3 bg-[#3C4A57] dark:bg-[#60A5FA] text-white dark:text-[#121212] px-2 sm:px-8 py-3 sm:py-4 rounded-xl shadow-lg hover:bg-[#2C3E50] dark:hover:bg-[#3B82F6] transition-all transform hover:-translate-y-1 w-full sm:w-auto h-auto min-h-[50px]"
             >
               <Apple className="shrink-0 w-[18px] h-[18px] sm:w-[20px] sm:h-[20px]" />
-              <div className="text-center min-w-0 flex-1">
+              <div className="text-center min-w-0">
                 <div className="text-[10px] sm:text-xs opacity-80 leading-snug mb-0.5 sm:mb-1 whitespace-normal break-words max-w-[140px] sm:max-w-none">{t('hero.downloadMac')}</div>
                 <div className="text-xs sm:text-sm font-bold flex items-center justify-center gap-1.5 flex-wrap">
                   Silicon <span className="text-[10px] bg-white/20 dark:bg-black/20 px-1.5 py-0.5 rounded uppercase whitespace-nowrap">v1.0.0</span>
@@ -74,7 +74,7 @@ const Hero: React.FC = () => {
               className="flex flex-row items-center justify-center gap-1.5 min-[350px]:gap-2 sm:gap-3 bg-white dark:bg-[#1E1E1E] text-[#3C4A57] dark:text-[#E2E8F0] border border-[#E2E0D8] dark:border-[#2D2D2D] px-2 sm:px-8 py-3 sm:py-4 rounded-xl shadow-sm hover:bg-[#F1EFE7] dark:hover:bg-[#252525] transition-all disabled:text-gray-400 dark:disabled:text-gray-600 disabled:cursor-not-allowed w-full sm:w-auto h-auto min-h-[50px]" disabled
             >
               <Layout className="shrink-0 w-[18px] h-[18px] sm:w-[20px] sm:h-[20px]" />
-              <div className="text-center min-w-0 flex-1">
+              <div className="text-center min-w-0">
                 <div className="text-[10px] sm:text-xs opacity-60 leading-snug mb-0.5 sm:mb-1 whitespace-normal break-words max-w-[140px] sm:max-w-none">{t('hero.downloadWin')}</div>
                 <div className="text-xs sm:text-sm font-bold">{t('hero.comingSoon')}</div>
               </div>
