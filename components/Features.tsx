@@ -20,7 +20,7 @@ const Features: React.FC = () => {
     <section id="features" className="py-24 bg-[#F1EFE7]/50 dark:bg-[#1A1A1A]/50 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-16 space-y-4">
-          <h2 className={`text-4xl ${language === 'ja' || language === 'ko' ? 'font-sans font-medium' : 'font-geometric font-bold'} text-[#2D3436] dark:text-[#F8F7F2]`}>{t('features.title')}</h2>
+          <h2 className={`text-lg min-[350px]:text-4xl ${language === 'ja' || language === 'ko' ? 'font-sans font-medium' : 'font-geometric font-bold'} text-[#2D3436] dark:text-[#F8F7F2]`}>{t('features.title')}</h2>
           <p className="text-[#6B7280] dark:text-[#9CA3AF] max-w-2xl mx-auto">
             {t('features.subtitle')}
           </p>
