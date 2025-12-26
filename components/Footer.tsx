@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
           <img
             src={isDark ? "/logo-dark.png" : "/logo-light.png"}
             alt="Nuvio Note Logo"
-            className="h-[62px] w-[198px] object-contain object-center transition-all duration-300"
+            className="h-[32px] w-auto md:h-[62px] md:w-[198px] object-contain object-center transition-all duration-300"
           />
         </div>
 
