@@ -1,10 +1,11 @@
-
-import React from 'react';
+import React, { useState } from 'react';
 import { Apple, Layout } from 'lucide-react';
 import { useTranslation } from '../context/LanguageContext';
+import MobileAlertModal from './MobileAlertModal';
 
 const Hero: React.FC = () => {
   const { t, language } = useTranslation();
+  const [showMobileAlert, setShowMobileAlert] = useState(false);
 
   const handleDownload = (e: React.MouseEvent, platform: 'mac' | 'win') => {
     // Mobile detection
@@ -12,7 +13,7 @@ const Hero: React.FC = () => {
 
     if (isMobile) {
       e.preventDefault();
-      alert(t('hero.mobileAlert'));
+      setShowMobileAlert(true);
       return;
     }
 
@@ -31,9 +32,6 @@ const Hero: React.FC = () => {
           {parts[0]}
           <span className="text-blue-500 dark:text-[#60A5FA] relative inline-block">
             {t('hero.transformed')}
-            <svg className="absolute w-full h-3 -bottom-1 left-0 text-blue-200 dark:text-blue-900 -z-10 opacity-60" viewBox="0 0 100 10" preserveAspectRatio="none">
-              <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="8" fill="none" />
-            </svg>
           </span>
           {parts[1]}
         </>
@@ -45,52 +43,47 @@ const Hero: React.FC = () => {
   return (
     <section className="relative pt-24 pb-12 md:pt-32 md:pb-24 overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute top-0 right-0 -z-10 opacity-30 dark:opacity-10 transform translate-x-1/3 -translate-y-1/4">
-        <svg width="800" height="800" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-          <path fill="#60A5FA" d="M44.7,-76.4C58.9,-69.2,71.8,-59.1,81.6,-46.6C91.4,-34.1,98.1,-19.2,95.8,-4.9C93.5,9.3,82.1,22.9,71.1,34.5C60.1,46.1,49.5,55.8,37.4,62.8C25.3,69.8,11.7,74.1,-1.1,76C-13.9,77.9,-26.9,77.4,-39.3,71.6C-51.7,65.8,-63.5,54.7,-72.2,41.4C-80.9,28.1,-86.5,12.6,-85.4,-2.4C-84.3,-17.4,-76.5,-31.9,-66.2,-43.8C-55.9,-55.7,-43.1,-65,-29.9,-72.7C-16.7,-80.4,-3.1,-86.5,7.9,-81.9L18.9,-77.3Z" transform="translate(100 100)" />
-        </svg>
-      </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-16 items-center">
-        <div className="space-y-8">
-          <div className="space-y-4">
-            <h1 className={`text-3xl sm:text-4xl md:text-6xl ${language === 'ja' || language === 'ko' ? 'font-sans font-medium' : 'font-geometric font-bold'} leading-tight text-[#2D3436] dark:text-[#F8F7F2] break-words`}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-8 min-[350px]:gap-16 items-center">
+        <div className="space-y-6 min-[350px]:space-y-8">
+          <div className="space-y-3 min-[350px]:space-y-4">
+            <h1 className={`text-2xl min-[350px]:text-3xl sm:text-4xl md:text-6xl ${language === 'ja' || language === 'ko' ? 'font-sans font-medium' : 'font-geometric font-bold'} leading-tight text-[#2D3436] dark:text-[#F8F7F2] break-words`}>
               {renderTitle()}
             </h1>
-            <p className="text-lg text-[#6B7280] dark:text-[#9CA3AF] max-w-lg leading-relaxed">
+            <p className="text-sm min-[350px]:text-lg text-[#6B7280] dark:text-[#9CA3AF] max-w-lg leading-relaxed">
               {t('hero.subtitle')}
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+          <div className="flex flex-col sm:flex-row gap-3 min-[350px]:gap-4 w-full sm:w-auto scale-90 min-[350px]:scale-100 origin-center min-[350px]:origin-left">
             <button
               onClick={(e) => handleDownload(e, 'mac')}
-              className="flex items-center justify-center gap-2 sm:gap-3 bg-[#3C4A57] dark:bg-[#60A5FA] text-white dark:text-[#121212] px-2 sm:px-8 py-3 sm:py-4 rounded-xl shadow-lg hover:bg-[#2C3E50] dark:hover:bg-[#3B82F6] transition-all transform hover:-translate-y-1 w-full sm:w-auto"
+              className="flex flex-col min-[350px]:flex-row items-center justify-center gap-1.5 min-[350px]:gap-2 sm:gap-3 bg-[#3C4A57] dark:bg-[#60A5FA] text-white dark:text-[#121212] px-2 sm:px-8 py-3 sm:py-4 rounded-xl shadow-lg hover:bg-[#2C3E50] dark:hover:bg-[#3B82F6] transition-all transform hover:-translate-y-1 w-full sm:w-auto"
             >
               <Apple className="shrink-0 w-[18px] h-[18px] sm:w-[20px] sm:h-[20px]" />
-              <div className="text-left min-w-0">
+              <div className="text-center min-[350px]:text-left min-w-0">
                 <div className="text-[10px] sm:text-xs opacity-80 leading-snug mb-0.5 sm:mb-1 whitespace-normal break-words">{t('hero.downloadMac')}</div>
-                <div className="text-xs sm:text-sm font-bold flex items-center gap-1.5 flex-wrap">
+                <div className="text-xs sm:text-sm font-bold flex items-center justify-center min-[350px]:justify-start gap-1.5 flex-wrap">
                   Silicon <span className="text-[10px] bg-white/20 dark:bg-black/20 px-1.5 py-0.5 rounded uppercase whitespace-nowrap">v1.0.0</span>
                 </div>
               </div>
-              <div className="w-0 sm:w-5 shrink-0" aria-hidden="true"></div>
+              <div className="hidden min-[350px]:block w-0 sm:w-5 shrink-0" aria-hidden="true"></div>
             </button>
             <button
               onClick={(e) => handleDownload(e, 'win')}
-              className="flex items-center justify-center gap-2 sm:gap-3 bg-white dark:bg-[#1E1E1E] text-[#3C4A57] dark:text-[#E2E8F0] border border-[#E2E0D8] dark:border-[#2D2D2D] px-2 sm:px-8 py-3 sm:py-4 rounded-xl shadow-sm hover:bg-[#F1EFE7] dark:hover:bg-[#252525] transition-all disabled:opacity-50 w-full sm:w-auto" disabled
+              className="flex flex-col min-[350px]:flex-row items-center justify-center gap-1.5 min-[350px]:gap-2 sm:gap-3 bg-white dark:bg-[#1E1E1E] text-[#3C4A57] dark:text-[#E2E8F0] border border-[#E2E0D8] dark:border-[#2D2D2D] px-2 sm:px-8 py-3 sm:py-4 rounded-xl shadow-sm hover:bg-[#F1EFE7] dark:hover:bg-[#252525] transition-all disabled:text-gray-400 dark:disabled:text-gray-600 disabled:cursor-not-allowed w-full sm:w-auto" disabled
             >
               <Layout className="shrink-0 w-[18px] h-[18px] sm:w-[20px] sm:h-[20px]" />
-              <div className="text-left min-w-0">
+              <div className="text-center min-[350px]:text-left min-w-0">
                 <div className="text-[10px] sm:text-xs opacity-60 leading-snug mb-0.5 sm:mb-1 whitespace-normal break-words">{t('hero.downloadWin')}</div>
                 <div className="text-xs sm:text-sm font-bold">{t('hero.comingSoon')}</div>
               </div>
-              <div className="w-0 sm:w-5 shrink-0" aria-hidden="true"></div>
+              <div className="hidden min-[350px]:block w-0 sm:w-5 shrink-0" aria-hidden="true"></div>
             </button>
           </div>
         </div>
 
-        <div className="relative group">
+        <div className="relative group scale-90 min-[350px]:scale-100 origin-top min-[350px]:origin-center transition-transform">
           <div className="absolute -inset-4 bg-blue-100/30 dark:bg-blue-900/10 rounded-[32px] blur-2xl group-hover:bg-blue-200/40 transition-all duration-700"></div>
 
           <div className="relative bg-white dark:bg-[#1E1E1E] p-2 rounded-[24px] shadow-2xl border border-[#E2E0D8] dark:border-[#2D2D2D] transform rotate-1 group-hover:rotate-0 transition-all duration-500">
@@ -140,6 +133,11 @@ const Hero: React.FC = () => {
           </div>
         </div>
       </div>
+
+      <MobileAlertModal
+        isOpen={showMobileAlert}
+        onClose={() => setShowMobileAlert(false)}
+      />
     </section>
   );
 };
