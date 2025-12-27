@@ -59,57 +59,63 @@ export const translations = {
       intro: "Nuvio Note (hereinafter referred to as \"the Company\") values the protection of users' personal information and complies with relevant laws such as the Personal Information Protection Act. Through this Privacy Policy, the Company informs you of the purpose and method of using the personal information you provide and the measures taken for personal information protection.",
       sections: [
         {
-          title: "1. Items of Personal Information Collected and Collection Method",
-          subsections: [
-            {
-              title: "A. Items of Personal Information Collected",
-              items: [
-                "When signing up: Name, email address, password, profile picture",
-                "During service usage: Service usage records, access logs, cookies, connection IP information, device information",
-                "When linking Google account: Google user ID, email address, profile information, Google Calendar event information (with user consent)"
-              ]
-            },
-            {
-              title: "B. Collection Method",
-              content: "Website/App sign-up, service usage, provision from affiliates, collection via information generation tools"
-            }
-          ]
+          title: "1. Overview",
+          content: "Nuvio Note is a local-first application designed with user privacy as a core principle.\nThe application does not operate a centralized server and does not store user data on external servers.\n\nAll user data is stored locally on the user’s own device and protected through encryption."
         },
         {
-          title: "2. Purpose of Collection and Use of Personal Information",
+          title: "2. Google User Data Access and Usage",
+          content: "Nuvio Note uses Google APIs solely to provide features explicitly requested by the user, such as calendar synchronization and Google account authentication.\n\nGoogle user data accessed by the application may include:",
           items: [
-            "Service Provision: Content provision, customized service provision, identity verification for service usage",
-            "Member Management: Identity verification for membership services, personal identification, confirmation of intent to join, prevention of illegal use by bad members",
-            "New Service Development and Marketing: Development of new services and customized service provision, service provision based on statistical characteristics, provision of event and advertising information"
-          ]
+            "Google Calendar data",
+            "Basic profile information (name, profile image)",
+            "Email address associated with the Google account"
+          ],
+          calendarData: "This data is accessed only after explicit user consent via the Google OAuth consent screen."
         },
         {
-          title: "3. Retention and Usage Period of Personal Information",
-          content: "The Company retains and uses personal information within the period of retention and usage of personal information according to laws or the period agreed upon when collecting personal information from the information subject.",
+          title: "3. Google User Data Sharing and Disclosure",
+          content: "Nuvio Note does not sell, rent, share, or disclose Google user data to any third parties.\n\nSpecifically:",
           items: [
-            "Until membership withdrawal (However, if there is a violation of relevant laws or a request from an investigation agency, until the relevant reason is terminated)",
-            "If an investigation regarding a violation of relevant laws is in progress, until the investigation is terminated",
-            "If debts/credits remain due to service usage, until the debts/credits are settled"
+            "Google user data is not transmitted to any centralized server",
+            "Google user data is not shared with advertisers, analytics providers, or external services",
+            "Google user data is not used for AI or machine learning model training",
+            "Google user data remains encrypted and stored locally on the user’s device and is used only to provide core application functionality."
           ]
         },
         {
-          title: "4. Google User Data Policy",
-          content: "Nuvio Note complies with the {link} (including limited use requirements) regarding the use of information received from Google APIs and transfer to other apps.",
-          linkText: "Google API Services User Data Policy",
-          calendarData: "User's Google Calendar data is used only to provide in-app schedule management features with the user's explicit consent and is not sold to third parties or used for advertising purposes."
-        },
-        {
-          title: "5. Rights of Users and Method of Exercise",
-          content: "Users can view or modify their registered personal information or request cancellation of subscription at any time.",
+          title: "4. Data Storage and Local Encryption",
+          content: "Nuvio Note follows a local-first architecture:",
           items: [
-            "View/Modify Personal Information: Use 'Settings > Profile' menu in the app",
-            "Withdrawal: Use 'Delete Account' function in the app or contact customer center"
+            "All user data, including Google Calendar data, is stored only on the user’s personal computer",
+            "No copies of user data are stored on Nuvio Note servers",
+            "Data is encrypted at rest using industry-standard encryption mechanisms",
+            "Access to data is limited to the local application environment"
+          ],
+          calendarData: "Because no centralized server exists, the risk of large-scale data exposure or external breaches is significantly reduced."
+        },
+        {
+          title: "5. Data Protection and Security Measures",
+          content: "To protect Google user data and other sensitive information, Nuvio Note implements the following security measures:",
+          items: [
+            "Encrypted communication with Google APIs using HTTPS/TLS",
+            "Secure storage of OAuth tokens on the user’s device",
+            "Access controls restricting data access to authorized application components only",
+            "No remote access to user data by the developer or third parties"
+          ],
+          calendarData: "User data is retained only as long as necessary to provide the requested services and can be deleted at any time by removing the application or revoking Google account access."
+        },
+        {
+          title: "6. User Control and Data Deletion",
+          content: "Users have full control over their data:",
+          items: [
+            "Users may revoke Google account access at any time via their Google Account settings",
+            "Users may delete all locally stored data by uninstalling the application",
+            "No user data remains on any external servers after deletion"
           ]
         },
         {
-          title: "6. Chief Privacy Officer",
-          content: "The Company designates a Chief Privacy Officer as follows to take overall responsibility for personal information processing and to handle complaints and damage relief of information subjects related to personal information processing.",
-          manager: "Manager: Privacy Management Officer",
+          title: "7. Contact Information",
+          content: "If you have any questions regarding this Privacy Policy or data handling practices, please contact:",
           email: "Email: support@nuvio.now"
         }
       ],
@@ -340,57 +346,63 @@ export const translations = {
       intro: "Nuvio Note(이하 \"회사\"라 함)는 이용자의 개인정보보호를 매우 중요시하며, 『개인정보 보호법』 등 관련 법령을 준수하고 있습니다. 회사는 본 개인정보처리방침을 통하여 이용자께서 제공하시는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며, 개인정보보호를 위해 어떠한 조치가 취해지고 있는지 알려드립니다.",
       sections: [
         {
-          title: "1. 수집하는 개인정보 항목 및 수집방법",
-          subsections: [
-            {
-              title: "가. 수집하는 개인정보 항목",
-              items: [
-                "회원가입 시: 이름, 이메일 주소, 비밀번호, 프로필 사진",
-                "서비스 이용 과정: 서비스 이용 기록, 접속 로그, 쿠키, 접속 IP 정보, 기기 정보",
-                "Google 계정 연동 시: Google 사용자 ID, 이메일 주소, 프로필 정보, Google Calendar 일정 정보(사용자 동의 시)"
-              ]
-            },
-            {
-              title: "나. 개인정보 수집방법",
-              content: "홈페이지/앱 회원가입, 서비스 이용, 제휴사로부터의 제공, 생성정보 수집 툴을 통한 수집"
-            }
-          ]
+          title: "1. 개요",
+          content: "Nuvio Note는 사용자 개인 정보 보호를 핵심 원칙으로 설계된 로컬 우선(local-first) 애플리케이션입니다.\n중앙 서버를 운영하지 않으며 사용자의 데이터를 외부 서버에 저장하지 않습니다.\n\n모든 사용자 데이터는 사용자 기기에 로컬로 저장되며 암호화를 통해 보호됩니다."
         },
         {
-          title: "2. 개인정보의 수집 및 이용목적",
+          title: "2. Google 사용자 데이터 접근 및 사용",
+          content: "Nuvio Note는 캘린더 동기화 및 Google 계정 인증과 같이 사용자가 명시적으로 요청한 기능을 제공하기 위해서만 Google API를 사용합니다.\n\n애플리케이션이 접근하는 Google 사용자 데이터에는 다음이 포함될 수 있습니다:",
           items: [
-            "서비스 제공: 콘텐츠 제공, 맞춤형 서비스 제공, 서비스 이용에 따르는 본인인증",
-            "회원 관리: 회원제 서비스 이용에 따른 본인확인, 개인식별, 가입의사 확인, 불량회원의 부정이용 방지",
-            "신규 서비스 개발 및 마케팅: 신규 서비스 개발 및 맞춤 서비스 제공, 통계학적 특성에 따른 서비스 제공, 이벤트 및 광고성 정보 제공"
-          ]
+            "Google 캘린더 데이터",
+            "기본 프로필 정보(이름, 프로필 이미지)",
+            "Google 계정과 연동된 이메일 주소"
+          ],
+          calendarData: "이 데이터는 Google OAuth 동의 화면을 통한 사용자의 명시적 동의가 있어야만 접근 가능합니다."
         },
         {
-          title: "3. 개인정보의 보유 및 이용기간",
-          content: "회사는 법령에 따른 개인정보 보유·이용기간 또는 정보주체로부터 개인정보를 수집 시에 동의받은 개인정보 보유·이용기간 내에서 개인정보를 보유·이용합니다.",
+          title: "3. Google 사용자 데이터 공유 및 공개",
+          content: "Nuvio Note는 Google 사용자 데이터를 제3자에게 판매, 임대, 공유 또는 공개하지 않습니다.\n\n구체적으로:",
           items: [
-            "회원 탈퇴 시까지 (다만, 관계 법령에 위반되거나 수사기관의 요청이 있는 경우 해당 사유 종료 시까지)",
-            "관계 법령 위반에 따른 수사·조사 등이 진행 중인 경우에는 해당 수사·조사 종료 시까지",
-            "서비스 이용에 따른 채권·채무관계 잔존 시에는 해당 채권·채무관계 정산 시까지"
+            "Google 사용자 데이터는 중앙 서버로 전송되지 않습니다",
+            "Google 사용자 데이터는 광고주, 분석 제공업체 또는 외부 서비스와 공유되지 않습니다",
+            "Google 사용자 데이터는 AI 또는 머신 러닝 모델 학습에 사용되지 않습니다",
+            "Google 사용자 데이터는 사용자 기기에 암호화되어 로컬로 유지되며 핵심 애플리케이션 기능을 제공하는 데에만 사용됩니다."
           ]
         },
         {
-          title: "4. Google 사용자 데이터 정책",
-          content: "Nuvio Note는 Google API로부터 받은 정보의 사용 및 다른 앱으로의 이전을 포함하여 {link}을 준수합니다(제한적 사용 요건 포함).",
-          linkText: "Google API 서비스 사용자 데이터 정책(Google API Services User Data Policy)",
-          calendarData: "사용자의 Google Calendar 데이터는 사용자의 명시적인 동의 하에 앱 내 일정 관리 기능을 제공하기 위해서만 사용되며, 제3자에게 판매되거나 광고 목적으로 사용되지 않습니다."
-        },
-        {
-          title: "5. 이용자의 권리와 행사방법",
-          content: "이용자는 언제든지 등록되어 있는 자신의 개인정보를 조회하거나 수정할 수 있으며 가입해지를 요청할 수 있습니다.",
+          title: "4. 데이터 저장 및 로컬 암호화",
+          content: "Nuvio Note는 로컬 우선 아키텍처를 따릅니다:",
           items: [
-            "개인정보 조회/수정: 앱 내 '설정 > 프로필' 메뉴 이용",
-            "회원탈퇴: 앱 내 '계정 삭제' 기능 이용 또는 고객센터 문의"
+            "Google 캘린더 데이터를 포함한 모든 사용자 데이터는 사용자 개인 컴퓨터에만 저장됩니다",
+            "Nuvio Note 서버에는 사용자 데이터의 사본이 저장되지 않습니다",
+            "데이터는 업계 표준 암호화 메커니즘을 사용하여 저장 시 암호화됩니다",
+            "데이터 접근은 로컬 애플리케이션 환경으로 제한됩니다"
+          ],
+          calendarData: "중앙 서버가 존재하지 않으므로 대규모 데이터 노출이나 외부 침해의 위험이 크게 줄어듭니다."
+        },
+        {
+          title: "5. 데이터 보호 및 보안 조치",
+          content: "Google 사용자 데이터 및 기타 민감한 정보를 보호하기 위해 Nuvio Note는 다음 보안 조치를 시행합니다:",
+          items: [
+            "HTTPS/TLS를 사용한 Google API와의 암호화된 통신",
+            "사용자 기기에 OAuth 토큰의 안전한 저장",
+            "승인된 애플리케이션 구성 요소로만 데이터 접근을 제한하는 접근 제어",
+            "개발자 또는 제3자에 의한 사용자 데이터 원격 접근 불가"
+          ],
+          calendarData: "사용자 데이터는 요청된 서비스를 제공하는 데 필요한 기간 동안만 유지되며, 애플리케이션을 삭제하거나 Google 계정 접근 권한을 취소하여 언제든지 삭제할 수 있습니다."
+        },
+        {
+          title: "6. 사용자 통제 및 데이터 삭제",
+          content: "사용자는 자신의 데이터에 대한 완전한 통제권을 가집니다:",
+          items: [
+            "사용자는 Google 계정 설정을 통해 언제든지 Google 계정 접근 권한을 취소할 수 있습니다",
+            "사용자는 애플리케이션을 제거하여 로컬에 저장된 모든 데이터를 삭제할 수 있습니다",
+            "삭제 후에는 어떠한 외부 서버에도 사용자 데이터가 남지 않습니다"
           ]
         },
         {
-          title: "6. 개인정보 보호책임자",
-          content: "회사는 개인정보 처리에 관한 업무를 총괄해서 책임지고, 개인정보 처리와 관련한 정보주체의 불만처리 및 피해구제 등을 위하여 아래와 같이 개인정보 보호책임자를 지정하고 있습니다.",
-          manager: "담당자: 개인정보 관리 담당자",
+          title: "7. 연락처 정보",
+          content: "본 개인정보 처리방침이나 데이터 처리 관행에 대해 질문이 있으시면 다음으로 문의해 주십시오:",
           email: "이메일: support@nuvio.now"
         }
       ],
@@ -621,57 +633,63 @@ export const translations = {
       intro: "Nuvio Note（以下「当社」といいます）は、ユーザーの個人情報保護を非常に重要視し、『個人情報保護法』など関連法令を遵守しています。当社は、本プライバシーポリシーを通じて、ユーザーが提供する個人情報がどのような用途と方式で利用されており、個人情報保護のためにどのような措置が取られているかをお知らせします。",
       sections: [
         {
-          title: "1. 収集する個人情報項目および収集方法",
-          subsections: [
-            {
-              title: "A. 収集する個人情報項目",
-              items: [
-                "会員登録時：名前、メールアドレス、パスワード、プロフィール写真",
-                "サービス利用過程：サービス利用記録、アクセスログ、Cookie、接続IP情報、端末情報",
-                "Googleアカウント連携時：GoogleユーザーID、メールアドレス、プロフィール情報、Googleカレンダーの予定情報（ユーザー同意時）"
-              ]
-            },
-            {
-              title: "B. 個人情報収集方法",
-              content: "ウェブサイト/アプリ会員登録、サービス利用、提携会社からの提供、生成情報収集ツールによる収集"
-            }
-          ]
+          title: "1. 概要",
+          content: "Nuvio Noteは、ユーザーのプライバシー保護を核心原則として設計されたローカルファースト（local-first）アプリケーションです。\n当社は中央サーバーを運用しておらず、ユーザーデータを外部サーバーに保存しません。\n\nすべてのユーザーデータはユーザー自身のデバイスにローカルに保存され、暗号化によって保護されます。"
         },
         {
-          title: "2. 個人情報の収集および利用目的",
+          title: "2. Googleユーザーデータのアクセスおよび使用",
+          content: "Nuvio Noteは、カレンダーの同期やGoogleアカウント認証など、ユーザーが明示的に要求した機能を提供するためにのみGoogle APIを使用します。\n\nアプリケーションがアクセスするGoogleユーザーデータには、以下が含まれる場合があります：",
           items: [
-            "サービス提供：コンテンツ提供、カスタマイズされたサービス提供、サービス利用に伴う本人認証",
-            "会員管理：会員制サービス利用に伴う本人確認、個人識別、加入意思の確認、不良会員の不正利用防止",
-            "新規サービス開発およびマーケティング：新規サービス開発およびカスタマイズサービス提供、統計学的特性によるサービス提供、イベントおよび広告性情報の提供"
-          ]
+            "Googleカレンダーデータ",
+            "基本プロフィール情報（名前、プロフィール画像）",
+            "Googleアカウントに関連付けられたメールアドレス"
+          ],
+          calendarData: "このデータは、Google OAuth同意画面を通じたユーザーの明示的な同意がある場合にのみアクセスされます。"
         },
         {
-          title: "3. 個人情報の保有および利用期間",
-          content: "当社は、法令による個人情報保有・利用期間または情報主体から個人情報を収集する際に同意を得た個人情報保有・利用期間内で個人情報を保有・利用します。",
+          title: "3. Googleユーザーデータの共有および開示",
+          content: "Nuvio Noteは、Googleユーザーデータを第三者に販売、貸与、共有、または開示しません。\n\n具体的には：",
           items: [
-            "会員退会時まで（ただし、関係法令に違反したり捜査機関の要請がある場合は、当該事由終了時まで）",
-            "関係法令違反による捜査・調査などが進行中の場合は、当該捜査・調査終了時まで",
-            "サービス利用に伴う債権・債務関係残存時には、当該債権・債務関係精算時まで"
+            "Googleユーザーデータはいかなる中央サーバーにも送信されません",
+            "Googleユーザーデータは広告主、分析プロバイダー、または外部サービスと共有されません",
+            "GoogleユーザーデータはAIまたは機械学習モデルのトレーニングには使用されません",
+            "Googleユーザーデータは暗号化された状態でユーザーのデバイスにローカルに保持され、コアアプリケーション機能を提供するためにのみ使用されます。"
           ]
         },
         {
-          title: "4. Googleユーザーデータポリシー",
-          content: "Nuvio Noteは、Google APIから受け取った情報の使用および他のアプリへの転送を含め、{link}を遵守します（制限された使用要件を含む）。",
-          linkText: "Google APIサービスユーザーデータポリシー（Google API Services User Data Policy）",
-          calendarData: "ユーザーのGoogleカレンダーデータは、ユーザーの明示的な同意の下、アプリ内のスケジュール管理機能を提供するためにのみ使用され、第三者に販売されたり広告目的で使用されたりすることはありません。"
-        },
-        {
-          title: "5. 利用者の権利と行使方法",
-          content: "利用者はいつでも登録されている自分の個人情報を照会したり修正したりすることができ、登録解除を要求することができます。",
+          title: "4. データ保存およびローカル暗号化",
+          content: "Nuvio Noteはローカルファーストアーキテクチャに従います：",
           items: [
-            "個人情報の照会/修正：アプリ内の「設定 > プロフィール」メニューを利用",
-            "会員退会：アプリ内の「アカウント削除」機能を利用またはカスタマーセンターにお問い合わせ"
+            "Googleカレンダーデータを含むすべてのユーザーデータは、ユーザーのパーソナルコンピュータにのみ保存されます",
+            "Nuvio Noteサーバーにはユーザーデータのコピーは保存されません",
+            "データは業界標準の暗号化メカニズムを使用して保存時に暗号化されます",
+            "データへのアクセスはローカルアプリケーション環境に限定されます"
+          ],
+          calendarData: "中央サーバーが存在しないため、大規模なデータ漏洩や外部からの侵害のリスクが大幅に低減されます。"
+        },
+        {
+          title: "5. データ保護およびセキュリティ対策",
+          content: "Googleユーザーデータおよびその他の機密情報を保護するため、Nuvio Noteは以下のセキュリティ対策を実施しています：",
+          items: [
+            "HTTPS/TLSを使用したGoogle APIとの暗号化された通信",
+            "ユーザーデバイスでのOAuthトークンの安全な保存",
+            "認可されたアプリケーションコンポーネントのみにデータアクセスを制限するアクセス制御",
+            "開発者または第三者によるユーザーデータへのリモートアクセスの禁止"
+          ],
+          calendarData: "ユーザーデータは要求されたサービスを提供するために必要な期間のみ保持され、アプリケーションを削除するかGoogleアカウントのアクセス権を取り消すことでいつでも削除できます。"
+        },
+        {
+          title: "6. ユーザー管理およびデータ削除",
+          content: "ユーザーは自分のデータに対して完全な管理権を持ちます：",
+          items: [
+            "ユーザーはGoogleアカウント設定を通じていつでもGoogleアカウントのアクセス権を取り消すことができます",
+            "ユーザーはアプリケーションをアンインストールすることで、ローカルに保存されたすべてのデータを削除できます",
+            "削除後、外部サーバーにユーザーデータが残ることはありません"
           ]
         },
         {
-          title: "6. 個人情報保護責任者",
-          content: "当社は、個人情報処理に関する業務を総括して責任を負い、個人情報処理に関連する情報主体の苦情処理および被害救済などのために、以下のように個人情報保護責任者を指定しています。",
-          manager: "担当者：個人情報管理担当者",
+          title: "7. お問い合わせ先",
+          content: "本プライバシーポリシーまたはデータ処理の実践に関してご質問がある場合は、以下までお問い合わせください：",
           email: "メール：support@nuvio.now"
         }
       ],

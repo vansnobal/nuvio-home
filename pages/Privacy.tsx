@@ -57,7 +57,7 @@ const Privacy: React.FC = () => {
                                     </div>
                                 ) : (
                                     <>
-                                        {section.content && <p className="mb-4">{renderContent(section.content, section.linkText)}</p>}
+                                        {section.content && <p className="mb-4 whitespace-pre-line">{renderContent(section.content, section.linkText)}</p>}
 
                                         {section.items && (
                                             <ul className="list-disc pl-5 space-y-2">
@@ -69,10 +69,10 @@ const Privacy: React.FC = () => {
 
                                         {section.calendarData && <p>{section.calendarData}</p>}
 
-                                        {section.manager && (
+                                        {(section.manager || section.email) && (
                                             <div className="bg-[#F8F7F2] dark:bg-[#2D2D2D] p-4 rounded-lg mt-4">
-                                                <p><strong>{section.manager}</strong></p>
-                                                <p><strong>{section.email}</strong></p>
+                                                {section.manager && <p><strong>{section.manager}</strong></p>}
+                                                {section.email && <p><strong>{section.email}</strong></p>}
                                             </div>
                                         )}
                                     </>
