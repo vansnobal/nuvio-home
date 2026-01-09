@@ -2,10 +2,14 @@ import React, { useState } from 'react';
 import { Apple, Layout } from 'lucide-react';
 import { useTranslation } from '../context/LanguageContext';
 import MobileAlertModal from './MobileAlertModal';
+import { getMacDownloadUrl, getVersionDisplay } from '../config';
 
 const Hero: React.FC = () => {
   const { t, language } = useTranslation();
   const [showMobileAlert, setShowMobileAlert] = useState(false);
+
+  const macDownloadUrl = getMacDownloadUrl();
+  const versionDisplay = getVersionDisplay();
 
   const handleDownload = (e: React.MouseEvent, platform: 'mac' | 'win') => {
     // Mobile detection
@@ -20,6 +24,11 @@ const Hero: React.FC = () => {
     if (platform === 'win') {
       e.preventDefault();
       return;
+    }
+
+    // macOS 다운로드 - 링크로 이동
+    if (platform === 'mac') {
+      window.location.href = macDownloadUrl;
     }
   };
 
@@ -64,7 +73,7 @@ const Hero: React.FC = () => {
               <div className="text-center min-w-0">
                 <div className="text-[10px] sm:text-xs opacity-80 leading-snug mb-0.5 sm:mb-1 whitespace-normal break-words max-w-[140px] sm:max-w-none">{t('hero.downloadMac')}</div>
                 <div className="text-xs sm:text-sm font-bold flex items-center justify-center gap-1.5 flex-wrap">
-                  Silicon <span className="text-[10px] bg-white/20 dark:bg-black/20 px-1.5 py-0.5 rounded uppercase whitespace-nowrap">v1.0.0</span>
+                  Silicon <span className="text-[10px] bg-white/20 dark:bg-black/20 px-1.5 py-0.5 rounded uppercase whitespace-nowrap">{versionDisplay}</span>
                 </div>
               </div>
               <div className="hidden min-[350px]:block w-0 sm:w-5 shrink-0" aria-hidden="true"></div>
